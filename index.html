@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPT-101: Open Source Vault-PETase Therapy for Plastic Detox</title>
+    <meta name="description" content="The world's first open-source nanoplastic detox therapy—for everyone, everywhere, forever. No paywalls. No patents. No restrictions.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="VPT-101: The Linux of Medicine">
+    <meta property="og:description" content="Open-source nanoplastic detox therapy for everyone, everywhere, forever.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://openplasticdetox.github.io/VPT-101">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="VPT-101: The Linux of Medicine">
+    <meta name="twitter:description" content="Open-source nanoplastic detox therapy for everyone, everywhere, forever.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #10b981;
+            --accent: #f59e0b;
+            --dark: #1f2937;
+            --light: #f8fafc;
+            --gray: #6b7280;
+            --border: #e5e7eb;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .hero .mission {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            opacity: 0.8;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            border: 2px solid var(--primary);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        /* Main Content */
+        .main-content {
+            background: white;
+            margin-top: -50px;
+            border-radius: 20px 20px 0 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--dark);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--gray);
+            margin-bottom: 4rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* What Is VPT-101 */
+        .what-is {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        /* Quick Start */
+        .quick-start {
+            background: white;
+        }
+
+        .start-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .start-option {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .start-option:hover {
+            transform: translateY(-5px);
+        }
+
+        .start-option h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .start-option p {
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .start-option .btn {
+            background: white;
+            color: var(--primary);
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .start-option .btn:hover {
+            background: var(--light);
+            transform: translateY(-2px);
+        }
+
+        /* Repository Structure */
+        .repo-structure {
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            color: white;
+        }
+
+        .structure-tree {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 12px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            margin-top: 2rem;
+            overflow-x: auto;
+        }
+
+        .tree-line {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .tree-icon {
+            margin-right: 0.5rem;
+            color: var(--accent);
+        }
+
+        .tree-folder {
+            color: var(--accent);
+        }
+
+        .tree-file {
+            color: var(--secondary);
+        }
+
+        .tree-comment {
+            color: var(--gray);
+            font-style: italic;
+        }
+
+        /* Technical Package */
+        .technical-package {
+            background: white;
+        }
+
+        .package-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .package-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .package-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .package-list {
+            list-style: none;
+        }
+
+        .package-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .package-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* Community */
+        .community {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+        }
+
+        .community-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .community-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .community-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        /* License */
+        .license {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .license-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .license-badges {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .license-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer p {
+            margin-bottom: 2rem;
+            opacity: 0.8;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .social-link {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .features-grid,
+            .start-options,
+            .package-grid,
+            .community-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        /* Scroll Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Code Highlighting */
+        .code-block {
+            background: #1f2937;
+            color: #e5e7eb;
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        .highlight {
+            color: #fbbf24;
+        }
+
+        .string {
+            color: #34d399;
+        }
+
+        .comment {
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">🧬 VPT-101</a>
+            <ul class="nav-links">
+                <li><a href="#what-is">What Is It</a></li>
+                <li><a href="#quick-start">Quick Start</a></li>
+                <li><a href="#technical">Technical</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#license">License</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>VPT-101: The Linux of Medicine</h1>
+            <p class="subtitle">Open Source Vault-PETase Therapy for Plastic Detox</p>
+            <p class="mission">We are releasing the world's first open-source nanoplastic detox therapy—for everyone, everywhere, forever. No paywalls. No patents. No restrictions. The world owns this.</p>
+            <div class="cta-buttons">
+                <a href="https://github.com/OpenPlasticDetox/VPT-101" class="btn btn-primary">🚀 Get Started</a>
+                <a href="#what-is" class="btn btn-secondary">📖 Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- What Is VPT-101 -->
+        <section id="what-is" class="section what-is">
+            <div class="container">
+                <h2 class="section-title">🧬 What Is VPT-101?</h2>
+                <p class="section-subtitle">Human cell vault nanoparticles loaded with humanized, plastic-eating enzymes</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">💊</div>
+                        <h3 class="feature-title">Therapy</h3>
+                        <p>Human cell vault nanoparticles loaded with humanized, plastic-eating enzymes (FAST-PETase + MHETase)</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">🎯</div>
+                        <h3 class="feature-title">Target</h3>
+                        <p>Blood, brain, placenta—where plastics build up and cause the most harm to human health</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">⚡</div>
+                        <h3 class="feature-title">Action</h3>
+                        <p>Breaks down PET nanoplastics into safe, excretable metabolites that the body can eliminate</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">🔧</div>
+                        <h3 class="feature-title">Platform</h3>
+                        <p>Modular—swap enzymes to tackle any plastic, any organ. The foundation for open-source medicine</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">✅</div>
+                        <h3 class="feature-title">Status</h3>
+                        <p>Ready for global prototyping, improvement, and real-world testing. No waiting, no gatekeepers</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">🌍</div>
+                        <h3 class="feature-title">Access</h3>
+                        <p>Available to everyone, everywhere. No patents, no paywalls, no restrictions. The world owns this</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Start -->
+        <section id="quick-start" class="section quick-start">
+            <div class="container">
+                <h2 class="section-title">🚀 Quick Start</h2>
+                <p class="section-subtitle">Choose your path and start contributing to the future of medicine</p>
+                
+                <div class="start-options">
+                    <div class="start-option fade-in">
+                        <h3>🔬 For Researchers</h3>
+                        <p>Start with vault engineering protocols and genetic sequences</p>
+                        <a href="/protocols/vault_engineering_protocol.md" class="btn">View Protocols</a>
+                    </div>
+                    <div class="start-option fade-in">
+                        <h3>🏥 For Clinics</h3>
+                        <p>Access clinical testing roadmaps and regulatory templates</p>
+                        <a href="/protocols/clinical_testing_roadmap.md" class="btn">Clinical Guide</a>
+                    </div>
+                    <div class="start-option fade-in">
+                        <h3>🎓 For Education</h3>
+                        <p>Learn with plain-language explainers and DIY guides</p>
+                        <a href="/media/VPT-101_explainer.pdf" class="btn">Get Started</a>
+                    </div>
+                </div>
+
+                <div class="code-block" style="margin-top: 3rem;">
+                    <span class="highlight">$</span> <span class="string">git clone</span> https://github.com/OpenPlasticDetox/VPT-101.git<br>
+                    <span class="highlight">$</span> <span class="string">cd</span> VPT-101<br>
+                    <span class="comment"># Explore the protocols directory</span><br>
+                    <span class="highlight">$</span> <span class="string">ls</span> protocols/
+                </div>
+            </div>
+        </section>
+
+        <!-- Repository Structure -->
+        <section id="structure" class="section repo-structure">
+            <div class="container">
+                <h2 class="section-title">🗂️ Repository Structure</h2>
+                <p class="section-subtitle">Complete technical package organized for maximum accessibility</p>
+                
+                <div class="structure-tree">
+                    <div class="tree-line">
+                        <span class="tree-icon">📁</span>
+                        <span class="tree-folder">VPT-101/</span>
+                    </div>
+                    <div class="tree-line">
+                        <span class="tree-icon">├──</span>
+                        <span class="tree-folder">protocols/</span>
+                        <span class="tree-comment"># All wet-lab, clinical, and DIY protocols</span>
+                    </div>
+                    <div class="tree-line">
+                        <span class="tree-icon">├──</span>
+                        <span class="tree-folder">sequences/</span>
+                        <span class="tree-comment"># DNA/protein/peptide files (FASTA, GenBank)</span>
+                    </div>
+                    <div class="tree-line">
+                        <span class="tree-icon">├──</span>
+                        <span class="tree-folder">code/</span>
+                        <span class="tree-comment"># Simulation, design, and optimization tools</span>
+                    </div>
+                    <div class="tree-line">
+                        <span class="tree-icon">├──</span>
+                        <span class="tree-folder">data/</span>
+                        <span class="tree-comment"># Proof-of-concept results, safety profiles</span>
+                    </div>
+                    <div class="tree-line">
+                        <span class="tree-icon">├──</span>
+                        <span class="tree-folder">regulatory/</span>
+                        <span class="tree-comment"># IND template, toxicology checklists, guidelines</span>
+                    </div>
+                    <div class="tree-line">
+                        <span class="tree-icon">├──</span>
+                        <span class="tree-folder">media/</span>
+                        <span class="tree-comment"># Infographics, press kits, video explainers</span>
+                    </div>
+                    <div class="tree-line">
+                        <span class="tree-icon">├──</span>
+                        <span class="tree-file">README.md</span>
+                        <span class="tree-comment"># This file</span>
+                    </div>
+                    <div class="tree-line">
+                        <span class="tree-icon">└──</span>
+                        <span class="tree-file">LICENSE</span>
+                        <span class="tree-comment"># CC0 1.0 + OpenMTA</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Package -->
+        <section id="technical" class="section technical-package">
+            <div class="container">
+                <h2 class="section-title">🛠️ Full Technical Package</h2>
+                <p class="section-subtitle">Everything you need to build, test, and deploy VPT-101 therapies</p>
+                
+                <div class="package-grid">
+                    <div class="package-card fade-in">
+                        <h3>🧬 Protocols</h3>
+                        <ul class="package-list">
+                            <li>Vault nanoparticle engineering and enzyme loading</li>
+                            <li>Peptide targeting and pH-triggered release</li>
+                            <li>Cloning, expression, and purification workflows</li>
+                            <li>Step-by-step animal/clinical testing</li>
+                        </ul>
+                    </div>
+                    <div class="package-card fade-in">
+                        <h3>🧪 Genetic Sequences</h3>
+                        <ul class="package-list">
+                            <li>FAST-PETase (humanized)</li>
+                            <li>MHETase (codon-optimized)</li>
+                            <li>Targeting peptides (library)</li>
+                            <li>MVP (Major Vault Protein) scaffold</li>
+                        </ul>
+                    </div>
+                    <div class="package-card fade-in">
+                        <h3>💻 Code & Tools</h3>
+                        <ul class="package-list">
+                            <li>Vault design calculator (Python)</li>
+                            <li>Enzyme stability predictor</li>
+                            <li>Dosing optimization AI script</li>
+                        </ul>
+                    </div>
+                    <div class="package-card fade-in">
+                        <h3>📊 Validation Data</h3>
+                        <ul class="package-list">
+                            <li>In vitro proof-of-concept (PET degradation curves)</li>
+                            <li>Safety/tox data (IC50, organ-specific responses)</li>
+                            <li>PK/PD and biodistribution models</li>
+                        </ul>
+                    </div>
+                    <div class="package-card fade-in">
+                        <h3>📋 Regulatory/Compliance</h3>
+                        <ul class="package-list">
+                            <li>IND submission template (FDA/EMA)</li>
+                            <li>Toxicology matrix/checklists (OECD, GLP)</li>
+                            <li>Manufacturing SOPs for scale-up</li>
+                        </ul>
+                    </div>
+                    <div class="package-card fade-in">
+                        <h3>🔗 Permanent Access</h3>
+                        <ul class="package-list">
+                            <li>GitHub Repo (main)</li>
+                            <li>IPFS Folder (permanent mirror)</li>
+                            <li>Archive.org Full Package</li>
+                            <li>Torrent Magnet Link</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community -->
+        <section id="community" class="section community">
+            <div class="container">
+                <h2 class="section-title">🌐 Community</h2>
+                <p class="section-subtitle">Join the global movement building the Linux of Medicine</p>
+                
+                <div class="community-grid">
+                    <div class="community-card fade-in">
+                        <h3>💬 Matrix</h3>
+                        <p>#vault-detox:matrix.org<br>Real-time chat and collaboration</p>
+                    </div>
+                    <div class="community-card fade-in">
+                        <h3>📞 Weekly Calls</h3>
+                        <p>Jitsi meetings with live support<br>Instant feedback and guidance</p>
+                    </div>
+                    <div class="community-card fade-in">
+                        <h3>📝 Collaboration</h3>
+                        <p>HackMD whiteboard<br>Loomio for voting</p>
+                    </div>
+                    <div class="community-card fade-in">
+                        <h3>💰 Funding</h3>
+                        <p>OpenCollective for community funding<br>Gitcoin for micro-grants</p>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <p style="font-size: 1.2rem; margin-bottom: 1rem;">🤝 How to Contribute</p>
+                    <ul style="list-style: none; display: inline-block; text-align: left;">
+                        <li>• Fork the repo, submit pull requests with improvements</li>
+                        <li>• Join the Matrix/Discord for support or collaboration</li>
+                        <li>• Submit new protocols, translations, validation data</li>
+                        <li>• Participate in weekly sprints and open lab meetings</li>
+                        <li>• <strong>No attribution required—just share your work openly!</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- License -->
+        <section id="license" class="section license">
+            <div class="container">
+                <div class="license-content">
+                    <h2 class="section-title">📝 License</h2>
+                    <p class="section-subtitle">Complete freedom for the world. No restrictions, no paywalls, no patents.</p>
+                    
+                    <div class="license-badges">
+                        <span class="license-badge">Creative Commons CC0 1.0 Universal</span>
+                        <span class="license-badge">Open Material Transfer Agreement (OpenMTA)</span>
+                    </div>
+                    
+                    <p style="margin-top: 2rem; font-size: 1.1rem;">
+                        <strong>No patents may be asserted on this work or improvements—public good forever.</strong>
+                    </p>
+                    
+                    <div style="margin-top: 3rem;">
+                        <h3 style="margin-bottom: 1rem;">👑 Why We Did This</h3>
+                        <p style="font-style: italic; font-size: 1.2rem;">
+                            "The world's best cures shouldn't sit behind a paywall. We're open-sourcing VPT-101 so no one is left out—ever."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h2>Let's Cure Plastic Together</h2>
+                <p><strong>Use it. Share it. Fork it. Improve it.</strong></p>
+                <p>This is just the beginning. Open science is how we win.</p>
+                
+                <div class="social-links">
+                    <a href="https://github.com/OpenPlasticDetox/VPT-101" class="social-link">GitHub</a>
+                    <a href="https://matrix.to/#/#vault-detox:matrix.org" class="social-link">Matrix</a>
+                    <a href="mailto:team@openplasticdetox.org" class="social-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.addEventListener('DOMContentLoaded', () => {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(el => observer.observe(el));
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add some interactive elements
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add click handlers for code blocks
+            const codeBlocks = document.querySelectorAll('.code-block');
+            codeBlocks.forEach(block => {
+                block.addEventListener('click', () => {
+                    // Copy to clipboard functionality could be added here
+                    console.log('Code block clicked - copy functionality ready');
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
