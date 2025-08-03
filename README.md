@@ -48,7 +48,7 @@ open sequences/variant_cassettes.fasta
 ```
 
 ### For Clinicians
-1. **Review Regulatory Templates**: `regulatory/FDA_submission_template.md`
+1. **Review Regulatory Templates**: [regulatory/index.html](https://bigrob7605.github.io/VPT-101/regulatory/) or [FDA template](https://bigrob7605.github.io/VPT-101/regulatory/FDA_submission_template.html)
 2. **Study Safety Protocols**: `protocols/vault_expression_protocol.md`
 3. **Join Community**: Matrix channel `#vault-detox:matrix.org`
 

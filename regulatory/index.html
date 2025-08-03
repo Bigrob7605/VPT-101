@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPT-101 Regulatory Templates</title>
+    <meta name="description" content="FDA submission templates and regulatory guidance for vault protein therapies">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="VPT-101: Regulatory Templates">
+    <meta property="og:description" content="FDA submission templates and regulatory guidance for vault protein therapies">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bigrob7605.github.io/VPT-101/regulatory/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #10b981;
+            --accent: #f59e0b;
+            --dark: #1f2937;
+            --light: #f8fafc;
+            --gray: #6b7280;
+            --border: #e5e7eb;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Main Content */
+        .main {
+            padding: 120px 0 80px;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 3rem;
+            margin: 2rem 0;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin: 2rem 0 1rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .warning {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .info {
+            background: #dbeafe;
+            border: 1px solid #3b82f6;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .download-link {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            margin: 0.5rem 0;
+        }
+
+        .download-link:hover {
+            background: var(--primary-dark);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .template-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .template-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border);
+        }
+
+        .template-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .template-card p {
+            color: var(--gray);
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .content {
+                padding: 2rem;
+                margin: 1rem 0;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="../index.html" class="logo">VPT-101</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../dashboard.html">Dashboard</a></li>
+                <li><a href="../industry_express_lane.html">Industry</a></li>
+                <li><a href="../docs/">Documentation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <a href="../index.html" class="back-link">← Back to VPT-101</a>
+            
+            <div class="content">
+                <h1>📋 Regulatory Templates</h1>
+                
+                <div class="info">
+                    <strong>Important:</strong> These templates are provided as guidance only. Always consult with regulatory experts and legal counsel before submitting to regulatory authorities.
+                </div>
+
+                <h2>Available Templates</h2>
+                
+                <div class="template-grid">
+                    <div class="template-card">
+                        <h3>FDA Submission Template</h3>
+                        <p>Comprehensive framework for submitting vault protein therapies to the FDA for regulatory approval. Includes all required sections for IND applications.</p>
+                        <a href="FDA_submission_template.md" class="download-link" download>Download Template</a>
+                    </div>
+                    
+                    <div class="template-card">
+                        <h3>Exploratory IND Template</h3>
+                        <p>Streamlined template for early-stage exploratory studies with minimal risk. Designed for initial safety and feasibility studies.</p>
+                        <a href="exploratory_ind_template.md" class="download-link" download>Download Template</a>
+                    </div>
+                </div>
+
+                <h2>How to Use These Templates</h2>
+                
+                <ol>
+                    <li><strong>Review the template</strong> - Understand the structure and requirements</li>
+                    <li><strong>Customize for your application</strong> - Adapt to your specific vault protein therapy</li>
+                    <li><strong>Consult regulatory experts</strong> - Ensure compliance with current guidelines</li>
+                    <li><strong>Prepare supporting documentation</strong> - Gather all required data and information</li>
+                    <li><strong>Submit through proper channels</strong> - Follow FDA submission procedures</li>
+                </ol>
+
+                <div class="warning">
+                    <strong>⚠️ Disclaimer:</strong> These templates are provided as-is without any warranty. They are intended as educational resources and starting points for regulatory submissions. Always consult with qualified regulatory professionals before submitting to any regulatory authority.
+                </div>
+
+                <h2>Additional Resources</h2>
+                
+                <ul>
+                    <li><a href="https://www.fda.gov/drugs/development-resources/investigational-new-drug-ind-application" target="_blank">FDA IND Application Guide</a></li>
+                    <li><a href="https://www.fda.gov/drugs/development-resources/chemistry-manufacturing-and-controls-cmc" target="_blank">FDA CMC Guidelines</a></li>
+                    <li><a href="https://www.fda.gov/drugs/development-resources/investigators-brochure" target="_blank">Investigator's Brochure Requirements</a></li>
+                    <li><a href="../docs/" target="_blank">VPT-101 Documentation</a></li>
+                </ul>
+
+                <h2>Community Support</h2>
+                
+                <p>Need help with regulatory submissions? Connect with our community:</p>
+                
+                <ul>
+                    <li><strong>Email:</strong> screball7605@aol.com</li>
+                    <li><strong>Matrix:</strong> #vault-detox:matrix.org</li>
+                    <li><strong>Documentation:</strong> <a href="../docs/">VPT-101 Docs</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html> 

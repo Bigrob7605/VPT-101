@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FDA Submission Template - VPT-101</title>
+    <meta name="description" content="FDA submission template for vault protein therapies">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="FDA Submission Template - VPT-101">
+    <meta property="og:description" content="FDA submission template for vault protein therapies">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bigrob7605.github.io/VPT-101/regulatory/FDA_submission_template.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #10b981;
+            --accent: #f59e0b;
+            --dark: #1f2937;
+            --light: #f8fafc;
+            --gray: #6b7280;
+            --border: #e5e7eb;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Main Content */
+        .main {
+            padding: 120px 0 80px;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 3rem;
+            margin: 2rem 0;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin: 2rem 0 1rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin: 1rem 0 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .warning {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .info {
+            background: #dbeafe;
+            border: 1px solid #3b82f6;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .download-link {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            margin: 0.5rem 0;
+        }
+
+        .download-link:hover {
+            background: var(--primary-dark);
+        }
+
+        .template-section {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border);
+        }
+
+        .template-section h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        code {
+            background: #f3f4f6;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+
+        pre {
+            background: #f3f4f6;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .content {
+                padding: 2rem;
+                margin: 1rem 0;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="../index.html" class="logo">VPT-101</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../dashboard.html">Dashboard</a></li>
+                <li><a href="../industry_express_lane.html">Industry</a></li>
+                <li><a href="../docs/">Documentation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Regulatory Templates</a>
+            
+            <div class="content">
+                <h1>📋 FDA Submission Template for Vault Protein Therapies</h1>
+                
+                <div class="warning">
+                    <strong>⚠️ Important Disclaimers:</strong>
+                    <ul>
+                        <li>This is a template only - Must be customized for specific applications</li>
+                        <li>Legal review required - Consult with regulatory experts before submission</li>
+                        <li>FDA guidance - Follow current FDA guidelines and requirements</li>
+                        <li>Professional assistance - Consider hiring regulatory consultants for complex submissions</li>
+                    </ul>
+                </div>
+
+                <h2>📁 Document Structure</h2>
+                
+                <ol>
+                    <li>Cover Letter</li>
+                    <li>Form FDA 1571</li>
+                    <li>Form FDA 1572</li>
+                    <li>Table of Contents</li>
+                    <li>Investigator's Brochure</li>
+                    <li>Protocol</li>
+                    <li>Chemistry, Manufacturing, and Controls (CMC)</li>
+                    <li>Pharmacology and Toxicology</li>
+                    <li>Previous Human Experience</li>
+                    <li>Additional Information</li>
+                </ol>
+
+                <h2>📝 Section-by-Section Template</h2>
+
+                <div class="template-section">
+                    <h3>1. Cover Letter Template</h3>
+                    
+                    <pre><code>[Date]
+
+Division of [Appropriate Division]
+Center for Drug Evaluation and Research
+Food and Drug Administration
+[Address]
+
+Subject: Investigational New Drug Application for [Vault Protein Therapy Name]
+
+Dear [Division Director],
+
+We are submitting an Investigational New Drug (IND) application for [Vault Protein Therapy Name], a novel vault protein-based therapeutic for the treatment of [disease/condition].
+
+This submission includes:
+- Form FDA 1571
+- Form FDA 1572
+- Investigator's Brochure
+- Clinical Protocol
+- Chemistry, Manufacturing, and Controls (CMC) information
+- Pharmacology and Toxicology data
+- Previous human experience (if applicable)
+
+We request a 30-day review period and are available for any questions or requests for additional information.
+
+Sincerely,
+
+[Name]
+[Title]
+[Institution/Company]
+[Contact Information]</code></pre>
+                </div>
+
+                <div class="template-section">
+                    <h3>2. Form FDA 1571 Template</h3>
+                    
+                    <h4>Section A: Sponsor Information</h4>
+                    <ul>
+                        <li><strong>Sponsor Name:</strong> [Your Institution/Company]</li>
+                        <li><strong>Address:</strong> [Complete Address]</li>
+                        <li><strong>Contact Person:</strong> [Name and Title]</li>
+                        <li><strong>Phone:</strong> [Phone Number]</li>
+                        <li><strong>Email:</strong> [Email Address]</li>
+                    </ul>
+
+                    <h4>Section B: Drug Information</h4>
+                    <ul>
+                        <li><strong>Drug Name:</strong> [Vault Protein Therapy Name]</li>
+                        <li><strong>Generic Name:</strong> [If applicable]</li>
+                        <li><strong>IND Number:</strong> [If previously assigned]</li>
+                        <li><strong>Drug Class:</strong> Vault Protein Therapeutic</li>
+                        <li><strong>Route of Administration:</strong> [Intravenous/Intratumoral/etc.]</li>
+                        <li><strong>Dosage Form:</strong> [Solution/Suspension/etc.]</li>
+                    </ul>
+
+                    <h4>Section C: Application Type</h4>
+                    <ul>
+                        <li><strong>New IND:</strong> ☑</li>
+                        <li><strong>Amendment:</strong> ☐</li>
+                        <li><strong>Information Amendment:</strong> ☐</li>
+                    </ul>
+                </div>
+
+                <div class="template-section">
+                    <h3>3. Investigator's Brochure Template</h3>
+                    
+                    <h4>3.1 Drug Description</h4>
+                    <pre><code>Drug Name: [Vault Protein Therapy Name]
+Generic Name: [If applicable]
+Chemical Name: [Vault protein construct description]
+Molecular Weight: [13 MDa for vault particle]
+Structure: [Include structural information]</code></pre>
+
+                    <h4>3.2 Mechanism of Action</h4>
+                    <p>Vault proteins are naturally occurring nanoparticles that can be engineered to deliver therapeutic payloads with high precision. The mechanism of action involves:</p>
+                    <ul>
+                        <li>Targeted delivery to specific cell types</li>
+                        <li>Controlled release of therapeutic payloads</li>
+                        <li>Minimal off-target effects</li>
+                        <li>Enhanced bioavailability and stability</li>
+                    </ul>
+                </div>
+
+                <div class="template-section">
+                    <h3>4. Chemistry, Manufacturing, and Controls (CMC)</h3>
+                    
+                    <h4>4.1 Manufacturing Process</h4>
+                    <ul>
+                        <li>Expression system and host cell line</li>
+                        <li>Purification methods and quality control</li>
+                        <li>Characterization of final product</li>
+                        <li>Stability testing protocols</li>
+                    </ul>
+
+                    <h4>4.2 Quality Control</h4>
+                    <ul>
+                        <li>Identity testing</li>
+                        <li>Potency assays</li>
+                        <li>Purity and impurity analysis</li>
+                        <li>Sterility and endotoxin testing</li>
+                    </ul>
+                </div>
+
+                <div class="template-section">
+                    <h3>5. Pharmacology and Toxicology</h3>
+                    
+                    <h4>5.1 Preclinical Studies</h4>
+                    <ul>
+                        <li>In vitro pharmacology studies</li>
+                        <li>Animal toxicology studies</li>
+                        <li>Pharmacokinetic analysis</li>
+                        <li>Safety pharmacology</li>
+                    </ul>
+
+                    <h4>5.2 Safety Assessment</h4>
+                    <ul>
+                        <li>Acute and chronic toxicity</li>
+                        <li>Genotoxicity studies</li>
+                        <li>Reproductive toxicity (if applicable)</li>
+                        <li>Carcinogenicity studies (if required)</li>
+                    </ul>
+                </div>
+
+                <div class="info">
+                    <strong>📋 Complete Template:</strong> This is a condensed version of the template. For the complete FDA submission template with all sections and detailed guidance, download the full Markdown version.
+                </div>
+
+                <div style="text-align: center; margin: 2rem 0;">
+                    <a href="FDA_submission_template.md" class="download-link" download>📥 Download Complete Template (Markdown)</a>
+                </div>
+
+                <h2>🔗 Additional Resources</h2>
+                
+                <ul>
+                    <li><a href="https://www.fda.gov/drugs/development-resources/investigational-new-drug-ind-application" target="_blank">FDA IND Application Guide</a></li>
+                    <li><a href="https://www.fda.gov/drugs/development-resources/chemistry-manufacturing-and-controls-cmc" target="_blank">FDA CMC Guidelines</a></li>
+                    <li><a href="https://www.fda.gov/drugs/development-resources/investigators-brochure" target="_blank">Investigator's Brochure Requirements</a></li>
+                    <li><a href="../docs/" target="_blank">VPT-101 Documentation</a></li>
+                </ul>
+
+                <h2>💬 Community Support</h2>
+                
+                <p>Need help with regulatory submissions? Connect with our community:</p>
+                
+                <ul>
+                    <li><strong>Email:</strong> screball7605@aol.com</li>
+                    <li><strong>Matrix:</strong> #vault-detox:matrix.org</li>
+                    <li><strong>Documentation:</strong> <a href="../docs/">VPT-101 Docs</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html> 
