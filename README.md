@@ -193,6 +193,7 @@ VPT-101/
 - **Safety Questions:** safety@vpt101.org
 - **Regulatory Guidance:** regulatory@vpt101.org
 - **Media/Press:** press@vpt101.org
+- **Principal Investigator ORCID:** [0009-0008-4352-6842](https://orcid.org/0009-0008-4352-6842)
 
 ## 📝 Licensing & Patents
 
