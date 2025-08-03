@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploratory IND Template - VPT-101</title>
+    <meta name="description" content="Exploratory IND template for vault protein therapies">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Exploratory IND Template - VPT-101">
+    <meta property="og:description" content="Exploratory IND template for vault protein therapies">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bigrob7605.github.io/VPT-101/regulatory/exploratory_ind_template.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #10b981;
+            --accent: #f59e0b;
+            --dark: #1f2937;
+            --light: #f8fafc;
+            --gray: #6b7280;
+            --border: #e5e7eb;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Main Content */
+        .main {
+            padding: 120px 0 80px;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 3rem;
+            margin: 2rem 0;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: var(--primary-dark);
+            font-size: 1.4rem;
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        h4 {
+            color: var(--dark);
+            font-size: 1.2rem;
+            margin: 1rem 0 0.5rem;
+        }
+
+        p {
+            margin: 1rem 0;
+            color: var(--dark);
+        }
+
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        .warning {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .info {
+            background: #dbeafe;
+            border: 1px solid #3b82f6;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .download-link {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            margin: 0.5rem 0;
+        }
+
+        .download-link:hover {
+            background: var(--primary-dark);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .template-section {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border);
+        }
+
+        pre {
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .content {
+                padding: 2rem;
+                margin: 1rem 0;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="../index.html" class="logo">VPT-101</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../dashboard.html">Dashboard</a></li>
+                <li><a href="../industry_express_lane.html">Industry</a></li>
+                <li><a href="../docs/">Documentation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Regulatory Templates</a>
+            
+            <div class="content">
+                <h1>🔬 Exploratory IND Template for VPT-101 Micro-dose Study</h1>
+                
+                <div class="warning">
+                    <strong>⚠️ Important Disclaimers:</strong>
+                    <ul>
+                        <li>This is a template only - Must be customized for specific applications</li>
+                        <li>Legal review required - Consult with regulatory experts before submission</li>
+                        <li>FDA guidance - Follow current FDA guidelines and requirements</li>
+                        <li>Professional assistance - Consider hiring regulatory consultants for complex submissions</li>
+                    </ul>
+                </div>
+
+                <h2>📋 FDA Guidance Compliance</h2>
+                <p>This template follows FDA guidance for Exploratory IND studies (14-day review timeline).</p>
+
+                <h2>🔬 Study Design: Single IV Micro-dose (0.01 mg kg⁻¹)</h2>
+
+                <h3>Primary Objectives</h3>
+                <ol>
+                    <li><strong>Vault PK Assessment</strong>: LC-MS/MS quantification of unique peptide tag</li>
+                    <li><strong>Proof-of-Mechanism</strong>: Real-time Raman spectroscopy of serum PET fragments</li>
+                    <li><strong>Safety Profile</strong>: Sub-pharmacologic dose safety evaluation</li>
+                </ol>
+
+                <h3>Study Population</h3>
+                <ul>
+                    <li><strong>Sample Size</strong>: 6 healthy volunteers</li>
+                    <li><strong>Age Range</strong>: 18-65 years</li>
+                    <li><strong>Health Status</strong>: No known plastic exposure, normal liver/kidney function</li>
+                    <li><strong>Exclusion Criteria</strong>: Pregnancy, recent plastic surgery, known PET allergies</li>
+                </ul>
+
+                <h2>📊 Endpoints</h2>
+
+                <h3>Primary Endpoints</h3>
+                <ul>
+                    <li><strong>Vault PK</strong>: Plasma concentration-time curve (0-24h)</li>
+                    <li><strong>PET Degradation</strong>: Raman spectroscopy at 0, 2, 4, 8, 12, 24h</li>
+                    <li><strong>Safety</strong>: Vital signs, CBC, chemistry panel, urinalysis</li>
+                </ul>
+
+                <h3>Secondary Endpoints</h3>
+                <ul>
+                    <li><strong>Biodistribution</strong>: Tissue sampling (optional biopsies)</li>
+                    <li><strong>Metabolite Analysis</strong>: LC-MS/MS of degradation products</li>
+                    <li><strong>Immune Response</strong>: Cytokine panel, complement activation</li>
+                </ul>
+
+                <h2>💉 Dosing Protocol</h2>
+                <pre><code>Day 1: Baseline measurements
+Day 2: Single IV infusion (0.01 mg kg⁻¹ over 30 min)
+Days 3-8: Daily monitoring
+Day 14: Final safety assessment</code></pre>
+
+                <h2>🛡️ Safety Monitoring</h2>
+                <ul>
+                    <li><strong>Real-time</strong>: Continuous ECG, pulse oximetry during infusion</li>
+                    <li><strong>Daily</strong>: Vital signs, adverse event assessment</li>
+                    <li><strong>Weekly</strong>: Laboratory safety panels</li>
+                    <li><strong>Emergency</strong>: Immediate discontinuation protocol</li>
+                </ul>
+
+                <h2>📈 Statistical Analysis</h2>
+                <ul>
+                    <li><strong>Sample Size</strong>: 6 subjects (pilot study)</li>
+                    <li><strong>Primary Analysis</strong>: Descriptive statistics</li>
+                    <li><strong>Safety Analysis</strong>: Incidence of adverse events</li>
+                    <li><strong>PK Analysis</strong>: Non-compartmental modeling</li>
+                </ul>
+
+                <h2>⏰ Regulatory Timeline</h2>
+                <ul>
+                    <li><strong>IND Submission</strong>: Day 0</li>
+                    <li><strong>FDA Review</strong>: 14 days (Exploratory IND)</li>
+                    <li><strong>Study Start</strong>: Day 15 (if approved)</li>
+                    <li><strong>Interim Report</strong>: Day 30</li>
+                    <li><strong>Final Report</strong>: Day 60</li>
+                </ul>
+
+                <h2>📋 Required Documentation</h2>
+
+                <h3>Pre-IND Meeting Request</h3>
+                <ul>
+                    <li>Briefing document (5 pages max)</li>
+                    <li>Study protocol summary</li>
+                    <li>Toxicology data summary</li>
+                    <li>Manufacturing information</li>
+                </ul>
+
+                <h3>IND Application Components</h3>
+                <ol>
+                    <li><strong>Form FDA 1571</strong></li>
+                    <li><strong>Form FDA 1572</strong> (Investigator's Statement)</li>
+                    <li><strong>Protocol</strong>: Complete study protocol</li>
+                    <li><strong>Chemistry, Manufacturing, and Controls (CMC)</strong></li>
+                    <li><strong>Nonclinical Pharmacology/Toxicology</strong></li>
+                    <li><strong>Previous Human Experience</strong></li>
+                    <li><strong>Additional Information</strong></li>
+                </ol>
+
+                <h3>CMC Requirements</h3>
+                <ul>
+                    <li><strong>Drug Substance</strong>: Vault nanoparticle characterization</li>
+                    <li><strong>Drug Product</strong>: Formulation, stability, sterility</li>
+                    <li><strong>Manufacturing</strong>: GMP-compliant production</li>
+                    <li><strong>Quality Control</strong>: Release specifications</li>
+                </ul>
+
+                <h3>Toxicology Package</h3>
+                <ul>
+                    <li><strong>Acute Toxicity</strong>: Single-dose studies (2 species)</li>
+                    <li><strong>Repeat-Dose</strong>: 7-day studies (1 species)</li>
+                    <li><strong>Genotoxicity</strong>: Ames test, micronucleus</li>
+                    <li><strong>Safety Pharmacology</strong>: Cardiovascular, respiratory, CNS</li>
+                </ul>
+
+                <h2>⚠️ Risk Mitigation</h2>
+
+                <h3>Known Risks</h3>
+                <ul>
+                    <li><strong>Allergic Reaction</strong>: Pre-treatment with antihistamines</li>
+                    <li><strong>Infusion Reaction</strong>: Slow infusion rate, monitoring</li>
+                    <li><strong>Off-target Effects</strong>: Negative control vaults included</li>
+                </ul>
+
+                <h3>Unknown Risks</h3>
+                <ul>
+                    <li><strong>Long-term Effects</strong>: Limited by micro-dose design</li>
+                    <li><strong>Immune Response</strong>: Monitoring for cytokine release</li>
+                    <li><strong>Biodistribution</strong>: Tissue sampling for analysis</li>
+                </ul>
+
+                <h2>✅ Success Criteria</h2>
+                <ul>
+                    <li><strong>Safety</strong>: No serious adverse events</li>
+                    <li><strong>PK</strong>: Detectable vault levels in plasma</li>
+                    <li><strong>Mechanism</strong>: PET degradation confirmed by Raman</li>
+                    <li><strong>Regulatory</strong>: FDA approval for full-dose study</li>
+                </ul>
+
+                <h2>🚀 Next Steps</h2>
+                <ol>
+                    <li><strong>Pre-IND Meeting</strong>: Schedule with FDA</li>
+                    <li><strong>Manufacturing</strong>: Scale-up GMP production</li>
+                    <li><strong>Toxicology</strong>: Complete required studies</li>
+                    <li><strong>IND Submission</strong>: Submit complete package</li>
+                    <li><strong>Study Initiation</strong>: Begin recruitment</li>
+                </ol>
+
+                <h2>📞 Contact Information</h2>
+                <ul>
+                    <li><strong>Sponsor</strong>: VPT-101 Consortium</li>
+                    <li><strong>Principal Investigator</strong>: [To be determined]</li>
+                    <li><strong>Regulatory Affairs</strong>: screball7605@aol.com</li>
+                    <li><strong>FDA Contact</strong>: [Division of Clinical Trial Design and Analysis]</li>
+                </ul>
+
+                <div class="info">
+                    <strong>📋 Complete Template:</strong> This is a condensed version of the template. For the complete exploratory IND template with all sections and detailed guidance, download the full Markdown version.
+                </div>
+
+                <div style="text-align: center; margin: 2rem 0;">
+                    <a href="exploratory_ind_template.md" class="download-link" download>📥 Download Complete Template (Markdown)</a>
+                </div>
+
+                <h2>🔗 Additional Resources</h2>
+                
+                <ul>
+                    <li><a href="https://www.fda.gov/drugs/development-resources/investigational-new-drug-ind-application" target="_blank">FDA IND Application Guide</a></li>
+                    <li><a href="https://www.fda.gov/drugs/development-resources/chemistry-manufacturing-and-controls-cmc" target="_blank">FDA CMC Guidelines</a></li>
+                    <li><a href="https://www.fda.gov/drugs/development-resources/investigators-brochure" target="_blank">Investigator's Brochure Requirements</a></li>
+                    <li><a href="../docs/" target="_blank">VPT-101 Documentation</a></li>
+                </ul>
+
+                <h2>💬 Community Support</h2>
+                
+                <p>Need help with regulatory submissions? Connect with our community:</p>
+                
+                <ul>
+                    <li><strong>Email:</strong> screball7605@aol.com</li>
+                    <li><strong>Matrix:</strong> #vault-detox:matrix.org</li>
+                    <li><strong>Documentation:</strong> <a href="../docs/">VPT-101 Docs</a></li>
+                </ul>
+
+                <div class="warning">
+                    <strong>⚠️ Disclaimer:</strong> This template is provided under CC0 1.0 Universal license. Modify as needed for your specific study requirements. Always consult with qualified regulatory professionals before submitting to any regulatory authority.
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html> 
