@@ -1,0 +1,277 @@
+# VPT-101: Open Source Medical Platform
+# Comprehensive .gitignore for medical research repository
+
+# =============================================================================
+# SECURITY & PRIVACY
+# =============================================================================
+
+# Personal Information
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.csr
+passwords.txt
+secrets.txt
+.env
+.env.local
+.env.production
+.env.staging
+
+# API Keys and Tokens
+api_keys.txt
+tokens.txt
+credentials.json
+service_account.json
+
+# =============================================================================
+# MEDICAL RESEARCH SPECIFIC
+# =============================================================================
+
+# Patient Data (NEVER commit patient data)
+patient_data/
+clinical_data/
+*.patient
+*.clinical
+*.medical_record
+
+# Regulatory Documents (sensitive)
+regulatory/private/
+regulatory/draft/
+regulatory/internal/
+
+# Lab Notebooks (personal)
+lab_notebooks/
+personal_notes/
+*.lab_notebook
+
+# =============================================================================
+# EXPERIMENTAL DATA
+# =============================================================================
+
+# Raw Data (large files)
+data/raw/
+data/experimental/
+*.fastq
+*.bam
+*.sam
+*.vcf
+*.bcf
+
+# Analysis Results (large)
+results/
+analysis_output/
+*.pdf
+*.png
+*.jpg
+*.tiff
+*.bmp
+
+# =============================================================================
+# SOFTWARE & DEVELOPMENT
+# =============================================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# R
+.Rhistory
+.RData
+.Ruserdata
+
+# =============================================================================
+# OPERATING SYSTEM
+# =============================================================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# EDITORS & IDEs
+# =============================================================================
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# VERSION CONTROL
+# =============================================================================
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# SVN
+.svn/
+
+# =============================================================================
+# BACKUP & TEMPORARY FILES
+# =============================================================================
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.tmp
+*.temp
+
+# Temporary files
+temp/
+tmp/
+.tmp/
+.temp/
+
+# =============================================================================
+# LOGS & DEBUGGING
+# =============================================================================
+
+# Log files
+*.log
+logs/
+log/
+
+# Debug files
+*.debug
+debug/
+.debug/
+
+# =============================================================================
+# BUILD & DEPLOYMENT
+# =============================================================================
+
+# Build outputs
+build/
+dist/
+out/
+target/
+
+# Dependencies
+node_modules/
+vendor/
+packages/
+
+# =============================================================================
+# DOCUMENTATION (KEEP THESE)
+# =============================================================================
+
+# These files SHOULD be committed:
+# README.md
+# LICENSE
+# docs/
+# protocols/
+# regulatory/ (templates only)
+# sequences/
+# code/ (source code)
+
+# =============================================================================
+# VPT-101 SPECIFIC
+# =============================================================================
+
+# Lab-specific configurations
+lab_config/
+institutional_settings/
+
+# Personal research notes
+personal/
+private/
+internal/
+
+# Draft documents
+drafts/
+*.draft
+*.work_in_progress
+
+# =============================================================================
+# END OF .gitignore
+# =============================================================================
+
+# Remember: This is the Linux of Medicine
+# Everything important should be open and accessible
+# Only exclude what absolutely must be private 
