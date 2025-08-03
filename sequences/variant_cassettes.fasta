@@ -1,0 +1,39 @@
+# VPT-101 Variant Enzyme Cassettes
+# Human-codon-optimized sequences for mammalian expression
+# Golden Gate compatible (BsaI/esp3I syntax)
+# CC0 1.0 Universal - Public Domain
+
+>PSase_human_opt|Polyesterase|Human-codon-optimized
+ATGGCGGCGGCGGCGGCGG...
+# Replace with actual PSase gene sequence
+# Polystyrene-degrading enzyme
+
+>PPase_human_opt|Polypropylenease|Human-codon-optimized  
+ATGGCGGCGGCGGCGGCGG...
+# Replace with actual PPase gene sequence
+# Polypropylene-degrading enzyme
+
+>PVCase_human_opt|Polyvinyl_chloridease|Human-codon-optimized
+ATGGCGGCGGCGGCGGCGG...
+# Replace with actual PVCase gene sequence
+# Polyvinyl chloride-degrading enzyme
+
+>FAST_PETase_human_opt|Enhanced_PETase|Human-codon-optimized
+ATGGCGGCGGCGGCGGCGG...
+# Replace with actual FAST-PETase gene sequence
+# Enhanced PET-degrading enzyme
+
+>MHETase_human_opt|Mono_hydroxyethyl_terephthalate_hydrolase|Human-codon-optimized
+ATGGCGGCGGCGGCGGCGG...
+# Replace with actual MHETase gene sequence
+# Mono(2-hydroxyethyl) terephthalate hydrolase
+
+# Instructions:
+# 1. Replace "..." with actual gene sequences
+# 2. Use Golden Gate assembly for cloning
+# 3. Express in CHO/HEK293 cells
+# 4. Validate with SEC, SDS-PAGE, activity assays
+# 5. Share results via Pull Request
+
+# Format: >ENZYME_NAME|FUNCTION|OPTIMIZATION
+# All sequences under CC0 1.0 Universal license 

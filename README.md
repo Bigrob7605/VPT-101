@@ -1,5 +1,7 @@
 # VPT-101: Open Source Vault-PETase Therapy for Plastic Detox 🌎
 
+[![License: CC0-1.0](https://licensebuttons.net/p/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+
 ## Mission Statement
 We are releasing the world's first open-source nanoplastic detox therapy—for everyone, everywhere, forever. No paywalls. No patents. No restrictions. The world owns this.
 
