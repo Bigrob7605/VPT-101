@@ -89,7 +89,7 @@ Together, we're building the future of medicine - open, collaborative, and acces
 ## 📊 The Impact We Expect
 
 **Immediate Impact:**
-- 50+ labs worldwide can immediately start using VPT-101
+- Growing community of labs worldwide ready to start using VPT-101
 - Treatment development costs reduced by 99%
 - Global collaboration on medical innovation
 - New therapeutic applications discovered rapidly

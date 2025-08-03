@@ -42,7 +42,7 @@ Vault proteins are naturally occurring nanoparticles that can be engineered to d
 - **Safety Frameworks**: Comprehensive testing and validation protocols
 
 ### Applications Revolution
-- **Cancer Therapy**: 40% reduction in chemotherapy side effects
+- **Cancer Therapy**: Designed for 40% reduction in chemotherapy side effects
 - **Gene Therapy**: Safe delivery to previously inaccessible tissues
 - **Vaccine Development**: 3x improved immune response
 - **Neurological Disorders**: Blood-brain barrier crossing breakthroughs

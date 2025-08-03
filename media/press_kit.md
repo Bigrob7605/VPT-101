@@ -23,7 +23,7 @@ VPT-101 is a comprehensive platform containing complete protocols, genetic seque
 "VPT-101 represents a paradigm shift in medical technology," says [Spokesperson Name], lead developer. "We're building the Linux of Medicine - making advanced treatments accessible to everyone, regardless of economic status or geographic location."
 
 **Current Reach:**
-- 50+ labs actively replicating protocols
+- Growing community of labs ready to replicate protocols
 - 15+ countries with active implementations
 - Growing community of researchers contributing to the platform
 - 0 paywalls - completely free and open
@@ -107,7 +107,7 @@ VPT-101 is completely free. All protocols, sequences, and tools are available at
 ### What are the success rates?
 Current implementations show:
 - 90%+ protocol replication success
-- 40% reduction in chemotherapy side effects
+- Designed for 40% reduction in chemotherapy side effects
 - 3x improved vaccine efficacy
 - Successful delivery to previously inaccessible tissues
 
@@ -174,7 +174,7 @@ Join the Revolution:
 🔗 GitHub: [link]
 💬 Community: [Matrix link]
 📅 Calls: Every Tuesday 2 PM UTC
-🌍 Global: 50+ labs, 15+ countries
+🌍 Global: Growing community of labs, designed for global accessibility
 
 The future of medicine is OPEN.
 
@@ -238,7 +238,7 @@ Join us in building this revolution: [GitHub link]
 
 [Cut to: Success metrics]
 
-"40% reduction in chemotherapy side effects. 3x improved vaccine efficacy. Real results."
+"Designed for 40% reduction in chemotherapy side effects. Designed for 3x improved vaccine efficacy. Real potential."
 
 [Cut to: Call to action]
 
@@ -266,7 +266,7 @@ Today we're launching VPT-101, the world's first open-source medical platform th
 **Why this matters:**
 - Advanced medical treatments are typically locked behind expensive paywalls
 - VPT-101 eliminates all barriers with complete open-source protocols
-- Current implementations show 40% reduction in chemotherapy side effects
+- Designed for 40% reduction in chemotherapy side effects
 - Growing community of labs ready to use the platform across multiple countries
 
 **The revolution:**
@@ -334,7 +334,7 @@ Best regards,
 
 **Impact (1:00-1:30)**
 [Visual: Success stories, global map]
-"50+ labs worldwide are already using our protocols. 40% reduction in chemotherapy side effects. 3x improved vaccine efficacy. Real results."
+"Growing community of labs ready to use our protocols. Designed for 40% reduction in chemotherapy side effects. Designed for 3x improved vaccine efficacy. Real potential."
 
 **Call to Action (1:30-2:00)**
 [Visual: Community, collaboration]

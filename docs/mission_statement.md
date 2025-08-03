@@ -54,7 +54,7 @@ We provide complete, free, and open access to:
 - **0 Paywalls** - completely free and accessible
 
 ### Success Stories
-- **Cancer Treatment**: 40% reduction in chemotherapy side effects
+- **Cancer Treatment**: Designed for 40% reduction in chemotherapy side effects
 - **Gene Therapy**: Successful delivery to previously inaccessible tissues
 - **Vaccine Development**: 3x improved immune response
 - **Neurological Research**: Blood-brain barrier crossing breakthroughs
