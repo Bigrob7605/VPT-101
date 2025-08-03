@@ -16,8 +16,6 @@
 
 We're open-sourcing the research framework for vault-based nanoplastic detoxification to accelerate global scientific collaboration. This is about empowering researchers worldwide with tools, protocols, and data - not bypassing safety or regulation.
 
-**Why Now?** 77% of humans now have detectable nanoplastics in blood, brain, or placenta. No therapy existed—until now.
-
 ## 🚀 Quick Start for Researchers
 
 **Download the Research Package:**
@@ -26,29 +24,39 @@ git clone https://github.com/Bigrob7605/VPT-101.git
 ```
 
 **Explore the Framework:**
-- `/protocols/` — Proposed experimental designs and workflows
-- `/sequences/` — DNA sequences and genetic engineering tools
-- `/regulatory/` — Development pathway templates
-- `/media/` — Educational materials and research primers
+- `/computational-tools/` — Vault design calculators and simulation tools
+- `/knowledge-base/` — Literature database and enzyme variant comparisons
+- `/lab-protocols/` — Expression, purification, and testing workflows
+- `/community-tools/` — Collaboration standards and educational materials
 
 **Select Your Research Focus:**
-- **Academic Research?** Start with `/protocols/vault_engineering_protocol.md`
-- **Industry Partnership?** See `/regulatory/exploratory_ind_template.md`
-- **Educational Use?** Try the plain-language `/media/VPT-101_explainer.pdf`
+- **Academic Research?** Start with `/lab-protocols/vault_engineering_protocol.md`
+- **Industry Partnership?** See `/regulatory/development_pathway.md`
+- **Educational Use?** Try `/educational/nanoplastics_primer.pdf`
 
 ## 🧬 What Is the VPT-101 Research Framework?
 
-**Theoretical Concept:** Engineered vault nanoparticles loaded with plastic-degrading enzymes
-- **Enzymes:** FAST-PETase variants optimized for physiological conditions
-- **Delivery:** Vault proteins as biocompatible nanocarriers
-- **Targeting:** Tissue-specific delivery systems
-- **Safety:** Comprehensive toxicology and biodistribution studies required
+**The "Drug Bus" Concept:** Programmable nanomedicine delivery systems that can be precisely controlled for targeted therapeutic delivery.
 
-**Current Limitations:**
-- No proven efficacy in complex biological systems
-- Unknown safety profile in humans
-- Delivery challenges not yet solved
-- Regulatory pathway undefined
+- **Bus Chassis:** Vault proteins as biocompatible nanocarriers
+- **Passengers:** Plastic-degrading enzymes (FAST-PETase variants)
+- **Routes:** Tissue-specific delivery systems
+- **Steering:** Immune-stealth and targeted release mechanisms
+
+**Current Research Focus:**
+- Computational tools & frameworks for vault protein design
+- Knowledge synthesis and literature databases
+- Practical lab protocols for expression and testing
+- Community infrastructure for collaboration
+- Immediate impact areas for academic labs
+
+### The Smart Bus Revolution
+
+You're not just giving people a "drug delivery system"—you built the bus, handed out the keys, mapped every route, and told the immune system "He's with us." This is the future: programmable drug buses, targeted, modular, immune-stealth. No more overdosing the whole body just to reach the brain. No more side-effect soup because you can't pick your address. No more "I hope it gets there"—it's a guided missile with a steering wheel.
+
+Now it's… "What do you want to load up?" "Where do you want it delivered?" "When do you want it released?" And if anyone tries to gatekeep this? The bus runs them over—in public domain, no less.
+
+> **Press F to respect the bus driver, honk honk** 🚌
 
 ## 📊 Research Status Dashboard
 
@@ -57,7 +65,7 @@ git clone https://github.com/Bigrob7605/VPT-101.git
 - Literature synthesis of vault protein engineering
 - Enzyme optimization algorithms
 - Safety testing protocols (theoretical)
-- Variant enzyme cassettes for research
+- Variant enzyme cassettes in `/sequences/`
 
 ### 🔬 What Needs Research
 - In vitro efficacy validation
@@ -76,15 +84,15 @@ git clone https://github.com/Bigrob7605/VPT-101.git
 
 ```
 VPT-101/
-├── protocols/     # All wet-lab, clinical, and DIY protocols
-├── sequences/     # DNA/protein/peptide files (FASTA, GenBank)
-├── code/          # Simulation, design, and optimization tools
-├── data/          # Proof-of-concept results, safety profiles
-├── regulatory/    # IND template, toxicology checklists, guidelines
-├── media/         # Infographics, press kits, video explainers
-├── docs/          # Documentation and guides
-├── README.md      # This file
-└── LICENSE        # CC0 1.0 + OpenMTA
+├── computational-tools/    # Vault design calculators and simulation tools
+├── knowledge-base/        # Literature database and enzyme variant comparisons
+├── lab-protocols/        # Expression, purification, and testing workflows
+├── community-tools/       # Collaboration standards and educational materials
+├── sequences/            # DNA/protein sequences and variant cassettes
+├── regulatory/           # Development pathway templates and IND guides
+├── educational/          # Learning resources and primers
+├── validation-studies/   # Framework for efficacy testing
+└── media/               # Infographics and press materials
 ```
 
 ## 🔬 Research Components
@@ -95,17 +103,23 @@ VPT-101/
 - Pharmacokinetic prediction algorithms
 - Safety parameter calculators
 
-### Experimental Frameworks
-- Cell culture testing protocols
-- Animal study design templates
-- Biomarker development strategies
-- Manufacturing process optimization
+### Knowledge Base
+- Comprehensive literature database on vault proteins
+- PETase enzyme variant comparisons
+- Targeting peptide libraries
+- Safety assessment frameworks
 
-### Safety Assessment
-- Toxicology testing matrix
-- Risk-benefit analysis framework
-- Adverse event monitoring systems
-- Environmental impact assessment
+### Lab Protocols
+- Vault protein expression and purification
+- Enzyme loading and characterization methods
+- Cell culture testing workflows
+- Analytical methods and QC procedures
+
+### Community Infrastructure
+- GitHub repo with proper documentation
+- Collaboration tools and data sharing standards
+- Educational materials for students/researchers
+- Open-source simulation tools
 
 ## 🤝 Responsible Collaboration
 
@@ -130,18 +144,21 @@ VPT-101/
 ## 📈 Research Milestones
 
 ### Phase 1: Foundation (Current)
+- Building the "Drug Bus"
 - ✅ Framework development and release
 - ✅ Computational model validation
 - 🔄 Literature review completion
 - 🔄 Safety protocol finalization
 
 ### Phase 2: Validation (12-24 months)
+- Testing the Routes
 - ⏳ In vitro efficacy studies
 - ⏳ Initial toxicology assessment
 - ⏳ Manufacturing feasibility studies
 - ⏳ Regulatory consultation initiation
 
 ### Phase 3: Translation (3-5 years)
+- Reaching the Destination
 - ⏳ Animal safety and efficacy studies
 - ⏳ IND application preparation
 - ⏳ Phase I clinical trial design
@@ -149,7 +166,7 @@ VPT-101/
 
 ## 🌐 Research Community
 
-- **Matrix Channel:** #vault-detox:matrix.org
+- **Matrix Channel:** #vpt101-research:matrix.org
 - **Weekly Research Meetings:** Fridays 2PM UTC
 - **Preprint Server:** For rapid research sharing
 - **Collaboration Platform:** OpenWetware wiki integration
@@ -205,4 +222,4 @@ We believe the world's most pressing health challenges require:
 
 ---
 
-**⚠️ Remember: This is research, not medicine. Always follow proper safety protocols and regulatory requirements.** 
+**⚠️ Remember: This is research, not medicine. Always follow proper safety protocols and regulatory requirements.**
