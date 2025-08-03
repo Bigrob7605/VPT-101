@@ -243,6 +243,20 @@
             }
         }
     </style>
+    <script>
+        function forceDownload(url, filename) {
+            // Create a temporary link element
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = filename;
+            link.target = '_blank';
+            
+            // Append to body, click, and remove
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
 </head>
 <body>
     <header class="header">
@@ -421,7 +435,7 @@ Structure: [Include structural information]</code></pre>
                 </div>
 
                 <div style="text-align: center; margin: 2rem 0;">
-                    <a href="FDA_submission_template.md" class="download-link" download>📥 Download Complete Template (Markdown)</a>
+                    <a href="FDA_submission_template.md" class="download-link" download="FDA_submission_template.md" onclick="forceDownload(this.href, 'FDA_submission_template.md')">📥 Download Complete Template (Markdown)</a>
                 </div>
 
                 <h2>🔗 Additional Resources</h2>

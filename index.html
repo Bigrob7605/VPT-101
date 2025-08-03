@@ -793,6 +793,20 @@
             border: 0;
         }
     </style>
+    <script>
+        function forceDownload(url, filename) {
+            // Create a temporary link element
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = filename;
+            link.target = '_blank';
+            
+            // Append to body, click, and remove
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -1033,7 +1047,7 @@
                         <h3>🏥 For Clinics</h3>
                         <p>Access clinical testing roadmaps and regulatory templates</p>
                         <a href="regulatory/FDA_submission_template.html" class="btn">View Clinical Guide</a>
-                        <a href="regulatory/FDA_submission_template.md" class="btn" style="background: #10b981; margin-left: 10px;">Download Template</a>
+                        <a href="regulatory/FDA_submission_template.md" class="btn" download="FDA_submission_template.md" style="background: #10b981; margin-left: 10px;" onclick="forceDownload(this.href, 'FDA_submission_template.md')">Download Template</a>
                     </div>
                     <div class="start-option fade-in">
                         <h3>🎓 For Education</h3>

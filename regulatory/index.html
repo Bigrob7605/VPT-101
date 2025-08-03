@@ -226,6 +226,20 @@
             }
         }
     </style>
+    <script>
+        function forceDownload(url, filename) {
+            // Create a temporary link element
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = filename;
+            link.target = '_blank';
+            
+            // Append to body, click, and remove
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
 </head>
 <body>
     <header class="header">
@@ -258,14 +272,14 @@
                         <h3>FDA Submission Template</h3>
                         <p>Comprehensive framework for submitting vault protein therapies to the FDA for regulatory approval. Includes all required sections for IND applications.</p>
                         <a href="FDA_submission_template.html" class="download-link">View Template</a>
-                        <a href="FDA_submission_template.md" class="download-link" download style="background: #10b981; margin-left: 10px;">Download Markdown</a>
+                        <a href="FDA_submission_template.md" class="download-link" download="FDA_submission_template.md" style="background: #10b981; margin-left: 10px;" onclick="forceDownload(this.href, 'FDA_submission_template.md')">Download Markdown</a>
                     </div>
                     
                     <div class="template-card">
                         <h3>Exploratory IND Template</h3>
                         <p>Streamlined template for early-stage exploratory studies with minimal risk. Designed for initial safety and feasibility studies.</p>
                         <a href="exploratory_ind_template.html" class="download-link">View Template</a>
-                        <a href="exploratory_ind_template.md" class="download-link" download style="background: #10b981; margin-left: 10px;">Download Markdown</a>
+                        <a href="exploratory_ind_template.md" class="download-link" download="exploratory_ind_template.md" style="background: #10b981; margin-left: 10px;" onclick="forceDownload(this.href, 'exploratory_ind_template.md')">Download Markdown</a>
                     </div>
                 </div>
 

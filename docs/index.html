@@ -179,6 +179,20 @@
             }
         }
     </style>
+    <script>
+        function forceDownload(url, filename) {
+            // Create a temporary link element
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = filename;
+            link.target = '_blank';
+            
+            // Append to body, click, and remove
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -204,7 +218,7 @@
                 <p>Our vision for democratizing advanced medical technology and eliminating healthcare inequity through open-source collaboration.</p>
                 <div class="doc-links">
                     <a href="mission_statement.md" class="btn btn-primary">View Document</a>
-                    <a href="mission_statement.md" class="btn btn-secondary" download>Download</a>
+                    <a href="mission_statement.md" class="btn btn-secondary" download="mission_statement.md" onclick="forceDownload(this.href, 'mission_statement.md')">Download</a>
                 </div>
             </div>
 
@@ -213,7 +227,7 @@
                 <p>Our call to action for global collaboration in advancing vault protein therapies.</p>
                 <div class="doc-links">
                     <a href="open_letter_to_world.md" class="btn btn-primary">View Document</a>
-                    <a href="open_letter_to_world.md" class="btn btn-secondary" download>Download</a>
+                    <a href="open_letter_to_world.md" class="btn btn-secondary" download="open_letter_to_world.md" onclick="forceDownload(this.href, 'open_letter_to_world.md')">Download</a>
                 </div>
             </div>
 
@@ -222,7 +236,7 @@
                 <p>Documentation of our breakthrough achievements in vault protein therapy development.</p>
                 <div class="doc-links">
                     <a href="revolutionary_breakthrough.md" class="btn btn-primary">View Document</a>
-                    <a href="revolutionary_breakthrough.md" class="btn btn-secondary" download>Download</a>
+                    <a href="revolutionary_breakthrough.md" class="btn btn-secondary" download="revolutionary_breakthrough.md" onclick="forceDownload(this.href, 'revolutionary_breakthrough.md')">Download</a>
                 </div>
             </div>
 
@@ -231,7 +245,7 @@
                 <p>Comprehensive summary of our revolutionary achievements and milestones.</p>
                 <div class="doc-links">
                     <a href="revolutionary_achievement_summary.md" class="btn btn-primary">View Document</a>
-                    <a href="revolutionary_achievement_summary.md" class="btn btn-secondary" download>Download</a>
+                    <a href="revolutionary_achievement_summary.md" class="btn btn-secondary" download="revolutionary_achievement_summary.md" onclick="forceDownload(this.href, 'revolutionary_achievement_summary.md')">Download</a>
                 </div>
             </div>
 
@@ -240,7 +254,7 @@
                 <p>Our community support framework and collaboration guidelines.</p>
                 <div class="doc-links">
                     <a href="community_support_framework.md" class="btn btn-primary">View Document</a>
-                    <a href="community_support_framework.md" class="btn btn-secondary" download>Download</a>
+                    <a href="community_support_framework.md" class="btn btn-secondary" download="community_support_framework.md" onclick="forceDownload(this.href, 'community_support_framework.md')">Download</a>
                 </div>
             </div>
 
@@ -249,7 +263,7 @@
                 <p>Guidelines for community participation and collaboration.</p>
                 <div class="doc-links">
                     <a href="community.md" class="btn btn-primary">View Document</a>
-                    <a href="community.md" class="btn btn-secondary" download>Download</a>
+                    <a href="community.md" class="btn btn-secondary" download="community.md" onclick="forceDownload(this.href, 'community.md')">Download</a>
                 </div>
             </div>
 
@@ -258,7 +272,7 @@
                 <p>Comprehensive checklist for launching VPT-101 implementations.</p>
                 <div class="doc-links">
                     <a href="launch_checklist.md" class="btn btn-primary">View Document</a>
-                    <a href="launch_checklist.md" class="btn btn-secondary" download>Download</a>
+                    <a href="launch_checklist.md" class="btn btn-secondary" download="launch_checklist.md" onclick="forceDownload(this.href, 'launch_checklist.md')">Download</a>
                 </div>
             </div>
 
@@ -267,7 +281,7 @@
                 <p>Detailed timeline for launch day activities and milestones.</p>
                 <div class="doc-links">
                     <a href="launch_day_timeline.md" class="btn btn-primary">View Document</a>
-                    <a href="launch_day_timeline.md" class="btn btn-secondary" download>Download</a>
+                    <a href="launch_day_timeline.md" class="btn btn-secondary" download="launch_day_timeline.md" onclick="forceDownload(this.href, 'launch_day_timeline.md')">Download</a>
                 </div>
             </div>
 
@@ -276,7 +290,7 @@
                 <p>Documentation of our first open laboratory call and its outcomes.</p>
                 <div class="doc-links">
                     <a href="first_open_lab_call.md" class="btn btn-primary">View Document</a>
-                    <a href="first_open_lab_call.md" class="btn btn-secondary" download>Download</a>
+                    <a href="first_open_lab_call.md" class="btn btn-secondary" download="first_open_lab_call.md" onclick="forceDownload(this.href, 'first_open_lab_call.md')">Download</a>
                 </div>
             </div>
 
@@ -285,7 +299,7 @@
                 <p>System for tracking and monitoring VPT-101 implementations.</p>
                 <div class="doc-links">
                     <a href="dashboard_tracking_system.md" class="btn btn-primary">View Document</a>
-                    <a href="dashboard_tracking_system.md" class="btn btn-secondary" download>Download</a>
+                    <a href="dashboard_tracking_system.md" class="btn btn-secondary" download="dashboard_tracking_system.md" onclick="forceDownload(this.href, 'dashboard_tracking_system.md')">Download</a>
                 </div>
             </div>
 
@@ -294,7 +308,7 @@
                 <p>Templates and guidelines for recognizing community contributors.</p>
                 <div class="doc-links">
                     <a href="contributor_recognition_templates.md" class="btn btn-primary">View Document</a>
-                    <a href="contributor_recognition_templates.md" class="btn btn-secondary" download>Download</a>
+                    <a href="contributor_recognition_templates.md" class="btn btn-secondary" download="contributor_recognition_templates.md" onclick="forceDownload(this.href, 'contributor_recognition_templates.md')">Download</a>
                 </div>
             </div>
 
@@ -303,7 +317,7 @@
                 <p>Templates for reaching out to potential partners and collaborators.</p>
                 <div class="doc-links">
                     <a href="partner_outreach_templates.md" class="btn btn-primary">View Document</a>
-                    <a href="partner_outreach_templates.md" class="btn btn-secondary" download>Download</a>
+                    <a href="partner_outreach_templates.md" class="btn btn-secondary" download="partner_outreach_templates.md" onclick="forceDownload(this.href, 'partner_outreach_templates.md')">Download</a>
                 </div>
             </div>
 
@@ -312,7 +326,7 @@
                 <p>Framework for sustainable expansion and long-term growth.</p>
                 <div class="doc-links">
                     <a href="sustainability_expansion_framework.md" class="btn btn-primary">View Document</a>
-                    <a href="sustainability_expansion_framework.md" class="btn btn-secondary" download>Download</a>
+                    <a href="sustainability_expansion_framework.md" class="btn btn-secondary" download="sustainability_expansion_framework.md" onclick="forceDownload(this.href, 'sustainability_expansion_framework.md')">Download</a>
                 </div>
             </div>
 
@@ -321,7 +335,7 @@
                 <p>Documentation of the GitHub Pages accessibility fixes and improvements.</p>
                 <div class="doc-links">
                     <a href="github_pages_fix.md" class="btn btn-primary">View Document</a>
-                    <a href="github_pages_fix.md" class="btn btn-secondary" download>Download</a>
+                    <a href="github_pages_fix.md" class="btn btn-secondary" download="github_pages_fix.md" onclick="forceDownload(this.href, 'github_pages_fix.md')">Download</a>
                 </div>
             </div>
         </div>

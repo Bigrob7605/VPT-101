@@ -229,6 +229,20 @@
             }
         }
     </style>
+    <script>
+        function forceDownload(url, filename) {
+            // Create a temporary link element
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = filename;
+            link.target = '_blank';
+            
+            // Append to body, click, and remove
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
 </head>
 <body>
     <header class="header">
@@ -410,7 +424,7 @@ Day 14: Final safety assessment</code></pre>
                 </div>
 
                 <div style="text-align: center; margin: 2rem 0;">
-                    <a href="exploratory_ind_template.md" class="download-link" download>📥 Download Complete Template (Markdown)</a>
+                    <a href="exploratory_ind_template.md" class="download-link" download="exploratory_ind_template.md" onclick="forceDownload(this.href, 'exploratory_ind_template.md')">📥 Download Complete Template (Markdown)</a>
                 </div>
 
                 <h2>🔗 Additional Resources</h2>
