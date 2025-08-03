@@ -137,9 +137,9 @@ The only costs are:
 ## 🌍 Global Impact
 
 ### Current Reach
-- **50+ Labs** already using VPT-101
-- **15+ Countries** with active implementations
-- **1000+ Researchers** contributing
+- **Growing community of labs** ready to use VPT-101
+- **Designed for global accessibility** across multiple countries
+- **Growing community of researchers** contributing
 - **0 Paywalls** - completely free
 
 ### Future Vision

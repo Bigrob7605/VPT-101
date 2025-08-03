@@ -48,9 +48,9 @@ We provide complete, free, and open access to:
 ## 🎯 Our Impact
 
 ### Current Reach
-- **50+ Labs** actively replicating protocols worldwide
-- **15+ Countries** with active VPT-101 implementations
-- **1000+ Researchers** contributing to the platform
+- **Growing community of labs** ready to replicate protocols worldwide
+- **Designed for global accessibility** across multiple countries
+- **Growing community of researchers** contributing to the platform
 - **0 Paywalls** - completely free and accessible
 
 ### Success Stories
@@ -60,7 +60,7 @@ We provide complete, free, and open access to:
 - **Neurological Research**: Blood-brain barrier crossing breakthroughs
 
 ### Future Goals
-- **1000+ Active Contributors** within one year
+- **Growing community of active contributors** within one year
 - **100+ Clinical Implementations** globally
 - **20+ Regulatory Approvals** for vault protein therapies
 - **Standard of Care** establishment for advanced treatments
@@ -151,7 +151,7 @@ Vault proteins are naturally occurring nanoparticles that can be engineered to d
 ## 🚀 Our Future
 
 ### Short-term (1 year)
-- Expand to 1000+ active contributors
+- Expand to growing community of active contributors
 - Enable 100+ clinical implementations
 - Achieve 20+ regulatory approvals
 - Establish regional community chapters

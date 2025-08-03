@@ -50,9 +50,9 @@ Vault proteins are naturally occurring nanoparticles that can be engineered to d
 ## 🌍 The Global Impact
 
 ### Current Reach (Projected)
-- **50+ Labs** actively replicating protocols worldwide
-- **15+ Countries** with active implementations
-- **1000+ Researchers** contributing to the platform
+- **Growing community of labs** ready to replicate protocols worldwide
+- **Designed for global accessibility** across multiple countries
+- **Growing community of researchers** contributing to the platform
 - **0 Paywalls** - completely free and accessible
 
 ### Success Metrics
@@ -140,7 +140,7 @@ VPT-101/
 ## 🎯 The Future Vision
 
 ### Short-term Goals (1 year)
-- **1000+ Active Contributors**: Global community expansion
+- **Growing community of active contributors**: Global community expansion
 - **100+ Clinical Implementations**: Real-world impact
 - **20+ Regulatory Approvals**: Official recognition
 - **Standard of Care**: Vault protein therapies as norm
