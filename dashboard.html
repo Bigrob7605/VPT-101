@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VPT-101 Live Dashboard - The Linux of Medicine</title>
+    <title>VPT-101 Research Dashboard - Open Source Medicine</title>
     <style>
         * {
             margin: 0;
@@ -35,6 +35,20 @@
             background: linear-gradient(45deg, #fff, #fbbf24);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+
+        .status-banner {
+            background: rgba(245, 158, 11, 0.2);
+            border: 2px solid #f59e0b;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .status-banner h2 {
+            color: #f59e0b;
+            margin-bottom: 10px;
         }
 
         .metrics-grid {
@@ -70,7 +84,13 @@
             opacity: 0.9;
         }
 
-        .global-map {
+        .metric-status {
+            font-size: 0.9rem;
+            color: #10b981;
+            margin-top: 10px;
+        }
+
+        .development-section {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             padding: 30px;
@@ -78,23 +98,28 @@
             margin-bottom: 40px;
         }
 
-        .map-title {
+        .section-title {
             font-size: 2rem;
             margin-bottom: 20px;
             text-align: center;
         }
 
-        .lab-locations {
+        .development-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
         }
 
-        .lab-location {
+        .dev-item {
             background: rgba(16, 185, 129, 0.2);
-            padding: 15px;
+            padding: 20px;
             border-radius: 10px;
             border-left: 4px solid #10b981;
+        }
+
+        .dev-item h3 {
+            color: #10b981;
+            margin-bottom: 10px;
         }
 
         .timeline {
@@ -135,6 +160,10 @@
 
         .status-upcoming {
             color: #f59e0b;
+        }
+
+        .status-planned {
+            color: #6b7280;
         }
 
         .consortium-section {
@@ -181,188 +210,216 @@
             transform: translateY(-2px);
         }
 
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+        .contribute-section {
+            background: rgba(16, 185, 129, 0.1);
+            border: 2px solid #10b981;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 40px;
+            text-align: center;
         }
 
-        .pulse {
-            animation: pulse 2s infinite;
+        .contribute-section h2 {
+            color: #10b981;
+            margin-bottom: 20px;
+        }
+
+        .contribute-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contribute-link {
+            background: #10b981;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .contribute-link:hover {
+            background: #059669;
+            transform: translateY(-2px);
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>🚀 VPT-101 Live Dashboard</h1>
-            <p>The Linux of Medicine - Real-Time Impact Metrics</p>
+            <h1>🧬 VPT-101 Research Dashboard</h1>
+            <p>Open Source Medicine - Research Framework Status</p>
         </div>
 
-        <!-- Success Metrics -->
+        <!-- Project Status Banner -->
+        <div class="status-banner">
+            <h2>🚧 Research Framework in Development</h2>
+            <p>This is an early-stage research concept. We're building the foundation for collaborative nanoplastic detoxification research.</p>
+        </div>
+
+        <!-- Current Status Metrics -->
         <div class="metrics-grid">
-            <div class="metric-card pulse">
-                <div class="metric-number" id="downloads">1,247</div>
-                <div class="metric-label">Downloads Today</div>
+            <div class="metric-card">
+                <div class="metric-number">1</div>
+                <div class="metric-label">Repository</div>
+                <div class="metric-status">✅ Live on GitHub</div>
             </div>
-            <div class="metric-card pulse">
-                <div class="metric-number" id="stars">892</div>
-                <div class="metric-label">GitHub Stars</div>
-            </div>
-            <div class="metric-card pulse">
-                <div class="metric-number" id="forks">156</div>
-                <div class="metric-label">Active Forks</div>
-            </div>
-            <div class="metric-card pulse">
-                <div class="metric-number" id="labs">47</div>
-                <div class="metric-label">Labs Implementing</div>
-            </div>
-            <div class="metric-card pulse">
-                <div class="metric-number" id="countries">23</div>
-                <div class="metric-label">Countries Active</div>
-            </div>
-            <div class="metric-card pulse">
-                <div class="metric-number" id="studies">12</div>
+            <div class="metric-card">
+                <div class="metric-number">0</div>
                 <div class="metric-label">Validation Studies</div>
+                <div class="metric-status">🔄 Framework Ready</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-number">0</div>
+                <div class="metric-label">Labs Testing</div>
+                <div class="metric-status">📋 Protocols Available</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-number">0</div>
+                <div class="metric-label">Countries Active</div>
+                <div class="metric-status">🌍 Open to All</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-number">0</div>
+                <div class="metric-label">Contributors</div>
+                <div class="metric-status">🤝 Welcome New Members</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-number">0</div>
+                <div class="metric-label">Publications</div>
+                <div class="metric-status">📚 Framework Released</div>
             </div>
         </div>
 
-        <!-- Global Adoption Map -->
-        <div class="global-map">
-            <h2 class="map-title">🌍 Global Lab Adoptions</h2>
-            <div class="lab-locations">
-                <div class="lab-location">
-                    <strong>🇺🇸 MIT</strong><br>
-                    <small>Cambridge, MA - Protocol Validation</small>
+        <!-- Development Status -->
+        <div class="development-section">
+            <h2 class="section-title">🔬 Research Components Status</h2>
+            <div class="development-grid">
+                <div class="dev-item">
+                    <h3>✅ Theoretical Framework</h3>
+                    <p>Vault protein engineering concepts and enzyme loading protocols documented</p>
                 </div>
-                <div class="lab-location">
-                    <strong>🇬🇧 Oxford</strong><br>
-                    <small>Oxford, UK - Clinical Testing</small>
+                <div class="dev-item">
+                    <h3>✅ Computational Models</h3>
+                    <p>Design tools and simulation frameworks available for researchers</p>
                 </div>
-                <div class="lab-location">
-                    <strong>🇩🇪 Max Planck</strong><br>
-                    <small>Berlin, Germany - Enzyme Optimization</small>
+                <div class="dev-item">
+                    <h3>✅ Safety Protocols</h3>
+                    <p>Risk assessment frameworks and toxicology guidelines established</p>
                 </div>
-                <div class="lab-location">
-                    <strong>🇯🇵 Tokyo University</strong><br>
-                    <small>Tokyo, Japan - Safety Studies</small>
+                <div class="dev-item">
+                    <h3>✅ Regulatory Templates</h3>
+                    <p>IND submission templates and FDA guidance documents ready</p>
                 </div>
-                <div class="lab-location">
-                    <strong>🇦🇺 CSIRO</strong><br>
-                    <small>Melbourne, Australia - Scale-up</small>
+                <div class="dev-item">
+                    <h3>🔄 Experimental Protocols</h3>
+                    <p>Lab protocols in development - ready for validation</p>
                 </div>
-                <div class="lab-location">
-                    <strong>🇨🇦 McGill</strong><br>
-                    <small>Montreal, Canada - Regulatory Prep</small>
+                <div class="dev-item">
+                    <h3>⏳ Validation Studies</h3>
+                    <p>Waiting for research teams to begin testing</p>
                 </div>
             </div>
         </div>
 
-        <!-- Validation Timeline -->
+        <!-- Research Timeline -->
         <div class="timeline">
-            <h2 class="timeline-title">📊 Validation Studies Timeline</h2>
+            <h2 class="timeline-title">📊 Research Development Timeline</h2>
             <div class="timeline-item">
-                <div class="timeline-date">Week 1</div>
+                <div class="timeline-date">Phase 1</div>
                 <div class="timeline-content">
-                    <strong class="status-active">✅ MIT - In Vitro Proof of Concept</strong><br>
-                    <small>PET degradation curves confirmed</small>
+                    <strong class="status-active">✅ Framework Release</strong><br>
+                    <small>Open-source research framework published</small>
                 </div>
             </div>
             <div class="timeline-item">
-                <div class="timeline-date">Week 2</div>
+                <div class="timeline-date">Phase 2</div>
                 <div class="timeline-content">
-                    <strong class="status-active">✅ Oxford - Cell Culture Safety</strong><br>
-                    <small>No cytotoxicity observed</small>
+                    <strong class="status-upcoming">🔄 Community Building</strong><br>
+                    <small>Research teams forming, protocols being adopted</small>
                 </div>
             </div>
             <div class="timeline-item">
-                <div class="timeline-date">Week 3</div>
+                <div class="timeline-date">Phase 3</div>
                 <div class="timeline-content">
-                    <strong class="status-upcoming">🔄 Max Planck - Enzyme Stability</strong><br>
-                    <small>Temperature and pH optimization</small>
+                    <strong class="status-planned">⏳ Validation Studies</strong><br>
+                    <small>In vitro and in vivo testing by research teams</small>
                 </div>
             </div>
             <div class="timeline-item">
-                <div class="timeline-date">Week 4</div>
+                <div class="timeline-date">Phase 4</div>
                 <div class="timeline-content">
-                    <strong class="status-upcoming">⏳ Tokyo - Animal Studies</strong><br>
-                    <small>Biodistribution and toxicity</small>
+                    <strong class="status-planned">⏳ Clinical Translation</strong><br>
+                    <small>IND applications and clinical trial preparation</small>
                 </div>
             </div>
             <div class="timeline-item">
-                <div class="timeline-date">Week 6</div>
+                <div class="timeline-date">Phase 5</div>
                 <div class="timeline-content">
-                    <strong class="status-upcoming">⏳ CSIRO - Manufacturing Scale-up</strong><br>
-                    <small>GMP production protocols</small>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Week 8</div>
-                <div class="timeline-content">
-                    <strong class="status-upcoming">⏳ McGill - FDA Pre-IND Meeting</strong><br>
-                    <small>Regulatory pathway confirmation</small>
+                    <strong class="status-planned">⏳ Global Implementation</strong><br>
+                    <small>Widespread adoption and therapeutic development</small>
                 </div>
             </div>
         </div>
 
         <!-- VPT-101 Consortium -->
         <div class="consortium-section">
-            <h2 class="consortium-title">🏢 VPT-101 Consortium</h2>
+            <h2 class="consortium-title">🏢 VPT-101 Research Consortium</h2>
             <p style="font-size: 1.3rem; margin-bottom: 20px;">
-                <strong>"Partner with us or compete against the world"</strong>
+                <strong>"Accelerate research through collaboration"</strong>
             </p>
             <p style="margin-bottom: 30px;">
-                Early adopters get preferred licensing terms, shared development costs, and first-to-market advantage.
+                Join the research consortium to access shared resources, collaborative funding, and accelerated development pathways.
             </p>
             
             <div class="consortium-benefits">
                 <div class="benefit-card">
-                    <h3>🚀 Fast-Track Licensing</h3>
-                    <p>Exclusive commercial rights for consortium members</p>
+                    <h3>🔬 Shared Research</h3>
+                    <p>Collaborate on validation studies and safety testing</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>💰 Shared Development</h3>
-                    <p>Split costs across multiple companies</p>
+                    <h3>💰 Joint Funding</h3>
+                    <p>Pool resources for expensive validation studies</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>⚡ First to Market</h3>
-                    <p>Priority access to clinical trial data</p>
+                    <h3>⚡ Fast-Track Access</h3>
+                    <p>Priority access to research findings and protocols</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>🎯 Regulatory Fast-Track</h3>
-                    <p>Pre-filled IND templates and FDA packages</p>
+                    <h3>🎯 Regulatory Support</h3>
+                    <p>Shared regulatory expertise and IND preparation</p>
                 </div>
             </div>
 
-            <a href="mailto:consortium@openplasticdetox.org" class="cta-button">
-                🚨 JOIN THE CONSORTIUM NOW
+            <a href="mailto:research@vpt101.org" class="cta-button">
+                🚨 JOIN THE RESEARCH CONSORTIUM
             </a>
         </div>
+
+        <!-- Contribute Section -->
+        <div class="contribute-section">
+            <h2>🤝 How to Contribute</h2>
+            <p>This research framework is built by the community, for the community. Here's how you can help:</p>
+            
+            <div class="contribute-links">
+                <a href="https://github.com/Bigrob7605/VPT-101" class="contribute-link" target="_blank">
+                    📁 Fork the Repository
+                </a>
+                <a href="https://matrix.to/#/#vpt101-research:matrix.org" class="contribute-link" target="_blank">
+                    💬 Join Matrix Chat
+                </a>
+                <a href="mailto:research@vpt101.org" class="contribute-link">
+                    📧 Contact Research Team
+                </a>
+                <a href="https://github.com/Bigrob7605/VPT-101/issues" class="contribute-link" target="_blank">
+                    🐛 Report Issues
+                </a>
+            </div>
+        </div>
     </div>
-
-    <script>
-        // Real-time counter updates
-        function updateCounters() {
-            const downloads = document.getElementById('downloads');
-            const stars = document.getElementById('stars');
-            const forks = document.getElementById('forks');
-            const labs = document.getElementById('labs');
-            const countries = document.getElementById('countries');
-            const studies = document.getElementById('studies');
-
-            // Simulate real-time updates
-            setInterval(() => {
-                downloads.textContent = Math.floor(Math.random() * 100) + 1200;
-                stars.textContent = Math.floor(Math.random() * 50) + 850;
-                forks.textContent = Math.floor(Math.random() * 20) + 140;
-                labs.textContent = Math.floor(Math.random() * 10) + 40;
-                countries.textContent = Math.floor(Math.random() * 5) + 20;
-                studies.textContent = Math.floor(Math.random() * 3) + 10;
-            }, 5000);
-        }
-
-        // Initialize dashboard
-        document.addEventListener('DOMContentLoaded', updateCounters);
-    </script>
 </body>
 </html> 

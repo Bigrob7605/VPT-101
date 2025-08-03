@@ -620,24 +620,24 @@
                             <p class="subtitle">Open Source Vault-PETase Therapy Research Framework</p>
                 <p class="mission">We're open-sourcing the research framework for vault-based nanoplastic detoxification to accelerate global scientific collaboration. This is about empowering researchers worldwide with tools, protocols, and data - not bypassing safety or regulation.</p>
             
-            <!-- Real-Time Impact Tracker -->
+            <!-- Research Status Tracker -->
             <div class="live-stats" style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 12px; margin: 2rem 0; backdrop-filter: blur(10px);">
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; text-align: center;">
                     <div>
-                        <div style="font-size: 2rem; font-weight: bold; color: #fbbf24;">📊 <span id="download-counter">1,247</span></div>
-                        <div style="font-size: 0.9rem; opacity: 0.8;">Downloads</div>
+                        <div style="font-size: 2rem; font-weight: bold; color: #fbbf24;">📁 <span id="repo-status">1</span></div>
+                        <div style="font-size: 0.9rem; opacity: 0.8;">Repository</div>
                     </div>
                     <div>
-                        <div style="font-size: 2rem; font-weight: bold; color: #34d399;">🌍 <span id="country-counter">47</span></div>
-                        <div style="font-size: 0.9rem; opacity: 0.8;">Countries</div>
+                        <div style="font-size: 2rem; font-weight: bold; color: #34d399;">🔬 <span id="framework-status">Ready</span></div>
+                        <div style="font-size: 0.9rem; opacity: 0.8;">Framework</div>
                     </div>
                     <div>
-                        <div style="font-size: 2rem; font-weight: bold; color: #f59e0b;">🏥 <span id="lab-counter">23</span></div>
-                        <div style="font-size: 0.9rem; opacity: 0.8;">Labs Testing</div>
+                        <div style="font-size: 2rem; font-weight: bold; color: #f59e0b;">📋 <span id="protocol-status">Available</span></div>
+                        <div style="font-size: 0.9rem; opacity: 0.8;">Protocols</div>
                     </div>
                     <div>
-                        <div style="font-size: 2rem; font-weight: bold; color: #ef4444;">⚡ <span id="study-counter">8</span></div>
-                        <div style="font-size: 0.9rem; opacity: 0.8;">Studies Active</div>
+                        <div style="font-size: 2rem; font-weight: bold; color: #ef4444;">🌍 <span id="access-status">Open</span></div>
+                        <div style="font-size: 0.9rem; opacity: 0.8;">Access</div>
                     </div>
                 </div>
             </div>
@@ -693,7 +693,7 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
                 <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 12px; backdrop-filter: blur(10px);">
                     <h3 style="margin-bottom: 1rem;">🌍 Global Network</h3>
-                    <p>Scientists, doctors, and activists from 47+ countries working together to solve the plastic crisis. No borders, no gatekeepers.</p>
+                    <p>Scientists, doctors, and activists from around the world working together to solve the plastic crisis. No borders, no gatekeepers.</p>
                 </div>
                 <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 12px; backdrop-filter: blur(10px);">
                     <h3 style="margin-bottom: 1rem;">🔬 Open Science</h3>
@@ -958,7 +958,7 @@
                         <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 12px; text-align: center; backdrop-filter: blur(10px);">
                             <div style="font-size: 3rem; margin-bottom: 1rem;">🔄</div>
                             <h3>University Validations</h3>
-                            <p style="margin-bottom: 1rem;">3 labs actively testing</p>
+                            <p style="margin-bottom: 1rem;">Research framework ready for validation</p>
                             <div style="background: rgba(255,255,255,0.2); padding: 0.5rem; border-radius: 6px; font-size: 0.9rem;">IN PROGRESS</div>
                         </div>
                         <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 12px; text-align: center; backdrop-filter: blur(10px);">
@@ -1152,29 +1152,26 @@
     </footer>
 
     <script>
-        // Real-time counter updates
-        function updateCounters() {
-            const counters = {
-                'download-counter': { current: 1247, target: 1500, increment: 3 },
-                'country-counter': { current: 47, target: 60, increment: 1 },
-                'lab-counter': { current: 23, target: 35, increment: 1 },
-                'study-counter': { current: 8, target: 15, increment: 1 }
+        // Research framework status display
+        function updateStatus() {
+            // Static status indicators - no fake data
+            const statusElements = {
+                'repo-status': '1',
+                'framework-status': 'Ready',
+                'protocol-status': 'Available',
+                'access-status': 'Open'
             };
 
-            Object.keys(counters).forEach(id => {
+            Object.keys(statusElements).forEach(id => {
                 const element = document.getElementById(id);
                 if (element) {
-                    const counter = counters[id];
-                    if (counter.current < counter.target) {
-                        counter.current += counter.increment;
-                        element.textContent = counter.current.toLocaleString();
-                    }
+                    element.textContent = statusElements[id];
                 }
             });
         }
 
-        // Update counters every 5 seconds
-        setInterval(updateCounters, 5000);
+        // Initialize status display
+        document.addEventListener('DOMContentLoaded', updateStatus);
 
         // Scroll animations
         const observerOptions = {
