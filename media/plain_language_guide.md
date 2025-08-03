@@ -172,7 +172,7 @@ The only costs are:
 ### Community Support
 - **Matrix Chat**: #vault-detox:matrix.org
 - **Discord**: Join our community server
-- **Email**: community@vpt101.org
+- **Email**: screball7605@aol.com
 - **Weekly Calls**: Every Tuesday 2 PM UTC
 
 ### Resources

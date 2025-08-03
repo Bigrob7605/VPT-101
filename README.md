@@ -81,7 +81,7 @@ VPT-101/
 ### Communication Channels
 - **Matrix**: `#vault-detox:matrix.org`
 - **Discord**: VPT-101 Community Server
-- **Email**: community@vpt101.org
+- **Email**: screball7605@aol.com
 - **Reddit**: r/VPT101
 - **Twitter**: @VPT101_Project
 
@@ -308,7 +308,7 @@ The future of medicine is open, collaborative, and free.
 ## 📞 Contact & Support
 
 - **Community**: Matrix `#vault-detox:matrix.org`
-- **Email**: community@vpt101.org
+- **Email**: screball7605@aol.com
 - **Website**: [vpt101.org](https://vpt101.org)
 - **Twitter**: [@VPT101_Project](https://twitter.com/VPT101_Project)
 

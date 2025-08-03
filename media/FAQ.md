@@ -111,17 +111,17 @@
 ## 📞 Contact Information
 
 **For Media Inquiries:**
-- Email: press@vpt101.org
+- Email: screball7605@aol.com
 - Matrix: #vault-detox:matrix.org
 - Discord: VPT-101 Community Server
 
 **For Technical Support:**
-- Email: support@vpt101.org
+- Email: screball7605@aol.com
 - Documentation: https://github.com/OpenPlasticDetox/VPT-101
 - Community: #vault-detox:matrix.org
 
 **For Regulatory Questions:**
-- Email: regulatory@vpt101.org
+- Email: screball7605@aol.com
 - Templates: `/regulatory/` directory
 
 ---

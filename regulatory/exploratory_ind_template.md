@@ -112,7 +112,7 @@ Day 14: Final safety assessment
 ## Contact Information
 - **Sponsor**: VPT-101 Consortium
 - **Principal Investigator**: [To be determined]
-- **Regulatory Affairs**: team@openplasticdetox.org
+- **Regulatory Affairs**: screball7605@aol.com
 - **FDA Contact**: [Division of Clinical Trial Design and Analysis]
 
 ---
