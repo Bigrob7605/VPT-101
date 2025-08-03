@@ -178,7 +178,7 @@ VPT-101 is just the beginning. We're building a movement that will transform how
 - **Repository**: https://github.com/OpenPlasticDetox/VPT-101
 - **Community**: #vault-detox:matrix.org
 - **Documentation**: Complete guides and tutorials
-- **Support**: community@vpt101.org
+- **Support**: screball7605@aol.com
 
 ## 🎯 The Call to Action
 

@@ -158,7 +158,7 @@ No technical background required - all are welcome!
 
 RSVP: [Link to RSVP form]
 
-Questions? Contact: community@vpt101.org
+Questions? Contact: screball7605@aol.com
 
 See you there!
 
@@ -278,7 +278,7 @@ Thank you for joining our first "Open Lab" call! It was fantastic to meet everyo
 • GitHub discussions: [Link]
 • Weekly calls: Every Tuesday 2 PM UTC
 
-Questions or suggestions? Contact: community@vpt101.org
+Questions or suggestions? Contact: screball7605@aol.com
 
 Looking forward to building the future of medicine together!
 

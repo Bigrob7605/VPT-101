@@ -1,6 +1,8 @@
 # VPT-101: The Linux of Medicine 🚀
 
 [![License: CC0](https://img.shields.io/badge/License-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+> **📱 [Live Dashboard](dashboard.html) | 🏢 [Industry Express Lane](industry_express_lane.html) | 🏠 [Back to Main](index.html)**
 [![OpenMTA](https://img.shields.io/badge/License-OpenMTA-blue.svg)](https://openmta.org/)
 [![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen.svg)](https://github.com/OpenPlasticDetox/VPT-101)
 

@@ -32,6 +32,29 @@
             border-radius: 20px;
         }
 
+        .nav-back {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .nav-back a {
+            color: #f59e0b;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-back a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(-5px);
+        }
+
         .header h1 {
             font-size: 3rem;
             margin-bottom: 10px;
@@ -177,6 +200,9 @@
 </head>
 <body>
     <div class="container">
+        <div class="nav-back">
+            <a href="index.html">← Back to Home</a>
+        </div>
         <div class="header">
             <h1>🏢 VPT-101 Industry Express Lane</h1>
             <p><strong>"Partner with us or compete against the world"</strong></p>

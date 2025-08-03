@@ -53,7 +53,7 @@
 - Protocol issues
 - Community suggestions
 
-#### Email Support (support@vpt101.org)
+#### Email Support (screball7605@aol.com)
 **Purpose**: Formal support requests
 **Response Time**: < 12 hours
 **Best For**: Complex issues, private matters, formal requests
@@ -141,7 +141,7 @@ You're joining the Linux of Medicine community. Here's how to get started:
 ❓ **Need Help**:
 • FAQ: [Link]
 • Documentation: [Link]
-• Support: support@vpt101.org
+• Support: screball7605@aol.com
 
 What brings you to VPT-101?
 ```
@@ -281,10 +281,10 @@ What brings you to VPT-101?
 - **Media Inquiries**: Press or public relations
 
 ### Emergency Contacts
-- **Safety Issues**: safety@vpt101.org
-- **Security Issues**: security@vpt101.org
-- **Legal Issues**: legal@vpt101.org
-- **Media Issues**: press@vpt101.org
+- **Safety Issues**: screball7605@aol.com
+- **Security Issues**: screball7605@aol.com
+- **Legal Issues**: screball7605@aol.com
+- **Media Issues**: screball7605@aol.com
 
 ### Escalation Procedures
 1. **Immediate Response**: Acknowledge within 1 hour

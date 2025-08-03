@@ -9,7 +9,7 @@ Welcome to the VPT-101 community! We're building the Linux of Medicine together,
 ### Primary Channels
 - **Matrix**: #vault-detox:matrix.org
 - **Discord**: [VPT-101 Community](https://discord.gg/vpt101)
-- **Email**: community@vpt101.org
+- **Email**: screball7605@aol.com
 - **GitHub Discussions**: [VPT-101 Discussions](https://github.com/OpenPlasticDetox/VPT-101/discussions)
 
 ### Regional Channels

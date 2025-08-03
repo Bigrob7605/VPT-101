@@ -95,7 +95,7 @@
 - [ ] **Set up communication channels**
   - [ ] Matrix channel: #vault-detox:matrix.org
   - [ ] Discord server: VPT-101 Community
-  - [ ] Email list: community@vpt101.org
+  - [ ] Email list: screball7605@aol.com
   - [ ] Weekly call scheduling system
 
 ## 📢 Pre-Launch Coordination (Week 3-4)
