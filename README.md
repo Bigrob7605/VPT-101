@@ -1,181 +1,126 @@
-# VPT-101: Open Source Vault Protein Therapy Platform
+# VPT-101: Open Source Vault-PETase Therapy for Plastic Detox 🌎
 
-## 🚀 The Linux of Medicine
-
-VPT-101 is the world's first open-source vault protein therapy platform, designed to democratize advanced medical treatments and eliminate healthcare paywalls. This project represents a paradigm shift in medical technology - making cutting-edge therapies accessible to everyone, everywhere.
-
-## 🌟 What Makes This Revolutionary
-
-- **First Open-Source Medical Platform**: Complete protocols, code, and data for vault protein therapies
-- **Zero Paywalls**: All research, protocols, and implementations are completely free
-- **Global Accessibility**: Designed for DIYbio labs, clinics, and researchers worldwide
-- **Regulatory Ready**: Includes regulatory submission templates and compliance frameworks
-- **Community Driven**: Built by and for the global medical community
-
-## 🧬 Core Technology
-
-VPT-101 utilizes engineered vault proteins - naturally occurring nanoparticles that can be programmed to deliver therapeutic payloads with unprecedented precision. Our platform includes:
-
-- **Vault Loading Protocols**: Complete methods for loading therapeutic compounds
-- **Expression Systems**: Optimized protocols for vault protein production
-- **Delivery Mechanisms**: Targeted delivery to specific cell types and tissues
-- **Safety Frameworks**: Comprehensive safety testing and validation protocols
-
-## 📁 Project Structure
-
-```
-VPT-101/
-├── protocols/          # Complete experimental protocols
-├── sequences/          # DNA sequences and genetic constructs
-├── code/              # Software tools and analysis scripts
-├── data/              # Experimental data and results
-├── regulatory/        # Regulatory submission templates
-├── media/            # Visual assets and documentation
-└── docs/             # Comprehensive documentation
-```
+## Mission Statement
+We are releasing the world's first open-source nanoplastic detox therapy—for everyone, everywhere, forever. No paywalls. No patents. No restrictions. The world owns this.
 
 ## 🚀 Quick Start
 
-### For Researchers
+**Download the Package:**
 ```bash
-# Clone the repository
 git clone https://github.com/OpenPlasticDetox/VPT-101.git
-cd VPT-101
-
-# Access protocols
-ls protocols/
-# - vault_expression_protocol.md
-# - therapeutic_loading_protocol.md
-# - safety_testing_protocol.md
-
-# Access sequences
-ls sequences/
-# - vault_protein_constructs.fasta
-# - therapeutic_payload_sequences.fasta
 ```
 
-### For DIYbio Labs
-```bash
-# Get started with basic vault expression
-cd protocols/
-cat vault_expression_protocol.md
+**Review the Protocols:**
+- `/protocols/` — Step-by-step bench protocols, loading, testing, clinical workflows
 
-# Follow the step-by-step guide for your first vault production
+**Select Your Use Case:**
+- **Research?** Start with `/protocols/vault_engineering_protocol.md`
+- **Clinic?** See `/protocols/clinical_testing_roadmap.md`
+- **DIY/education?** Try the plain-language `/media/VPT-101_explainer.pdf`
+
+**Join the Community:**
+- Matrix/Discord/Slack Invite
+- Weekly "open lab" meetings, live support, instant feedback
+
+## 🧬 What Is VPT-101?
+
+- **Therapy:** Human cell vault nanoparticles loaded with humanized, plastic-eating enzymes (FAST-PETase + MHETase)
+- **Target:** Blood, brain, placenta—where plastics build up
+- **Action:** Breaks down PET nanoplastics into safe, excretable metabolites
+- **Platform:** Modular—swap enzymes to tackle any plastic, any organ
+- **Status:** Ready for global prototyping, improvement, and real-world testing
+
+## 🗂️ Repository Structure
+
+```
+VPT-101/
+├── protocols/     # All wet-lab, clinical, and DIY protocols
+├── sequences/     # DNA/protein/peptide files (FASTA, GenBank)
+├── code/          # Simulation, design, and optimization tools
+├── data/          # Proof-of-concept results, safety profiles
+├── regulatory/    # IND template, toxicology checklists, guidelines
+├── media/         # Infographics, press kits, video explainers
+├── README.md      # This file
+└── LICENSE        # CC0 1.0 + OpenMTA
 ```
 
-### For Clinics
-```bash
-# Access regulatory templates
-cd regulatory/
-# - FDA_submission_template.md
-# - EU_CE_marking_guide.md
-# - Safety_assessment_framework.md
-```
+## 🛠️ Full Technical Package
 
-## 🎯 Use Cases
+### Protocols
+- Vault nanoparticle engineering and enzyme loading
+- Peptide targeting and pH-triggered release
+- Cloning, expression, and purification workflows
+- Step-by-step animal/clinical testing
 
-### Medical Applications
-- **Cancer Therapy**: Targeted delivery of chemotherapeutics
-- **Gene Therapy**: Safe delivery of genetic material
-- **Vaccine Development**: Enhanced immune response delivery
-- **Neurological Disorders**: Blood-brain barrier crossing therapies
+### Genetic Sequences
+- FAST-PETase (humanized)
+- MHETase (codon-optimized)
+- Targeting peptides (library)
+- MVP (Major Vault Protein) scaffold
 
-### Research Applications
-- **Drug Discovery**: High-throughput screening platforms
-- **Protein Engineering**: Novel therapeutic protein delivery
-- **Cell Biology**: Intracellular delivery research
-- **Immunology**: Immune system modulation studies
+### Code & Tools
+- Vault design calculator (Python)
+- Enzyme stability predictor
+- Dosing optimization AI script
+
+### Validation Data
+- In vitro proof-of-concept (PET degradation curves)
+- Safety/tox data (IC50, organ-specific responses)
+- PK/PD and biodistribution models
+
+### Regulatory/Compliance
+- IND submission template (FDA/EMA)
+- Toxicology matrix/checklists (OECD, GLP)
+- Manufacturing SOPs for scale-up
+
+## 🔗 Permanent, Censorship-Proof Access
+
+- **GitHub Repo** (main)
+- **IPFS Folder** (permanent mirror)
+- **Archive.org** Full Package
+- **Torrent Magnet Link**
 
 ## 🤝 How to Contribute
 
-### For Scientists
-1. **Fork the repository** and create a feature branch
-2. **Add your protocols** to the `/protocols` directory
-3. **Share your data** in the `/data` directory
-4. **Submit a pull request** with detailed documentation
-5. **Join our community calls** (weekly, details in `/docs/community.md`)
+- Fork the repo, submit pull requests with improvements
+- Join the Matrix/Discord for support or collaboration
+- Submit new protocols, translations, validation data
+- Participate in weekly sprints and open lab meetings
+- **No attribution required—just share your work openly!**
 
-### For Developers
-1. **Improve our analysis tools** in the `/code` directory
-2. **Build new software tools** for vault protein research
-3. **Create visualization tools** for experimental data
-4. **Develop automation scripts** for high-throughput screening
+## 🌐 Community
 
-### For Clinicians
-1. **Test protocols** in clinical settings
-2. **Share case studies** and patient outcomes
-3. **Contribute to regulatory frameworks**
-4. **Provide feedback** on safety and efficacy
+- **Matrix:** #vault-detox:matrix.org
+- Weekly Jitsi calls (see pinned in Matrix)
+- HackMD whiteboard, Loomio for voting
+- OpenCollective for community funding/support
 
-## 📊 Community Dashboard
+## 📣 For Press, Regulators, & Advocates
 
-Visit our live dashboard at: [VPT-101 Dashboard](https://openplasticdetox.github.io/VPT-101)
+- Press Kit and One-Pager
+- Plain Language Explainer
+- FAQ
+- Direct contact: team@openplasticdetox.org
 
-Track:
-- Repository forks and contributions
-- Protocol replications worldwide
-- Clinical trial progress
-- Community growth metrics
+## 📝 License
 
-## 🏥 Regulatory Compliance
+- **Creative Commons CC0 1.0 Universal**—public domain, no restrictions
+- **Open Material Transfer Agreement (OpenMTA)**
+- No patents may be asserted on this work or improvements—public good forever.
 
-All protocols include:
-- **FDA Submission Templates**: Ready-to-use regulatory packages
-- **Safety Assessment Frameworks**: Comprehensive safety testing protocols
-- **Quality Control Standards**: GMP-compliant production guidelines
-- **Clinical Trial Templates**: IRB-ready study protocols
+## 👑 Why We Did This
 
-## 🌍 Global Impact
+*"The world's best cures shouldn't sit behind a paywall. We're open-sourcing VPT-101 so no one is left out—ever."*
 
-### Current Reach
-- **50+ Labs** actively replicating protocols
-- **15+ Countries** with active VPT-101 implementations
-- **1000+ Researchers** contributing to the platform
-- **0 Paywalls** - completely free and open
+## Live Dashboard & Replication Map
 
-### Success Stories
-- **Cancer Treatment**: Successful vault-based chemotherapy delivery
-- **Gene Therapy**: Safe delivery of therapeutic genes
-- **Vaccine Development**: Enhanced vaccine efficacy studies
-- **Neurological Research**: Blood-brain barrier crossing therapies
-
-## 📞 Community & Support
-
-### Communication Channels
-- **Matrix**: #vault-detox:matrix.org
-- **Discord**: [VPT-101 Community](https://discord.gg/vpt101)
-- **Email**: community@vpt101.org
-- **Weekly Calls**: Every Tuesday 2 PM UTC
-
-### Resources
-- **Documentation**: `/docs/` directory
-- **Protocols**: `/protocols/` directory
-- **Data**: `/data/` directory
-- **Code**: `/code/` directory
-
-## 📄 Licensing
-
-This project is released under **CC0 + OpenMTA** licensing:
-
-- **CC0**: Complete public domain dedication
-- **OpenMTA**: Open Material Transfer Agreement for biological materials
-
-**No restrictions. No paywalls. No patents. The world owns this.**
-
-## 🎯 Mission Statement
-
-VPT-101 exists to eliminate healthcare inequity through open-source medical technology. We believe that advanced medical treatments should be accessible to everyone, regardless of economic status or geographic location.
-
-**The future of medicine is open, collaborative, and free.**
+- **Global Replication Dashboard**
+- See real-time forks, lab tests, and patient pilots
 
 ---
 
-## 🌟 Join the Revolution
+# Let's Cure Plastic Together
 
-This is more than a project - it's a movement. We're building the Linux of Medicine, and we need you.
+**Use it. Share it. Fork it. Improve it.**
 
-**Fork. Contribute. Share. Heal.**
-
----
-
-*VPT-101: Democratizing Medicine, One Protocol at a Time* 
+This is just the beginning. Open science is how we win. 

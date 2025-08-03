@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPT-101 Industry Express Lane - Partner or Compete</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            color: white;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            padding: 40px;
+            border-radius: 20px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .warning {
+            background: #dc2626;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .express-lane {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .lane-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #f59e0b;
+        }
+
+        .lane-card h2 {
+            color: #f59e0b;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .benefits-list {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .benefits-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .benefits-list li:before {
+            content: "✅ ";
+            color: #10b981;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #dc2626;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #b91c1c;
+            transform: translateY(-2px);
+        }
+
+        .regulatory-kit {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+        }
+
+        .kit-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .kit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .kit-item {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .kit-item h3 {
+            margin-bottom: 10px;
+            color: #fbbf24;
+        }
+
+        .consortium-pressure {
+            background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .pressure-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .pressure-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #fbbf24;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏢 VPT-101 Industry Express Lane</h1>
+            <p><strong>"Partner with us or compete against the world"</strong></p>
+        </div>
+
+        <div class="warning pulse">
+            ⚠️ WARNING: Big Pharma's "Blockbuster vs Netflix" moment is here. 
+            The open-source revolution in medicine has begun.
+        </div>
+
+        <div class="express-lane">
+            <div class="lane-card">
+                <h2>🚀 Fast-Track Licensing</h2>
+                <ul class="benefits-list">
+                    <li>Exclusive commercial rights for consortium members</li>
+                    <li>Pre-negotiated terms with regulatory bodies</li>
+                    <li>Shared IP protection and enforcement</li>
+                    <li>Priority access to clinical trial data</li>
+                    <li>Reduced development timeline by 60%</li>
+                </ul>
+                <a href="mailto:licensing@openplasticdetox.org" class="cta-button">
+                    🚨 SECURE LICENSING NOW
+                </a>
+            </div>
+
+            <div class="lane-card">
+                <h2>💰 Shared Development Costs</h2>
+                <ul class="benefits-list">
+                    <li>Split R&D costs across multiple companies</li>
+                    <li>Shared manufacturing infrastructure</li>
+                    <li>Collective bargaining power with suppliers</li>
+                    <li>Risk mitigation through consortium</li>
+                    <li>Faster time-to-market through collaboration</li>
+                </ul>
+                <a href="mailto:consortium@openplasticdetox.org" class="cta-button">
+                    💰 JOIN DEVELOPMENT POOL
+                </a>
+            </div>
+        </div>
+
+        <div class="regulatory-kit">
+            <h2 class="kit-title">📋 Regulatory Fast-Track Kit</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 30px;">
+                Remove every barrier to clinical trials. Pre-filled templates and FDA packages ready for immediate submission.
+            </p>
+            
+            <div class="kit-grid">
+                <div class="kit-item">
+                    <h3>📄 Pre-filled IND Templates</h3>
+                    <p>FDA-ready Investigational New Drug applications with all required sections completed</p>
+                </div>
+                <div class="kit-item">
+                    <h3>🏛️ FDA Meeting Request Packages</h3>
+                    <p>Complete packages for Pre-IND, End-of-Phase 1, and End-of-Phase 2 meetings</p>
+                </div>
+                <div class="kit-item">
+                    <h3>📊 Toxicology Matrix</h3>
+                    <p>OECD and GLP compliant safety assessment frameworks and checklists</p>
+                </div>
+                <div class="kit-item">
+                    <h3>🏭 Manufacturing SOPs</h3>
+                    <p>GMP-compliant production protocols for scale-up and commercialization</p>
+                </div>
+                <div class="kit-item">
+                    <h3>🌍 EMA Templates</h3>
+                    <p>European Medicines Agency submission packages and regulatory pathways</p>
+                </div>
+                <div class="kit-item">
+                    <h3>⚡ Fast-Track Designation</h3>
+                    <p>Priority review and accelerated approval pathway documentation</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="/regulatory/fast_track_kit.zip" class="cta-button">
+                    📥 DOWNLOAD REGULATORY KIT
+                </a>
+            </div>
+        </div>
+
+        <div class="consortium-pressure">
+            <h2 class="pressure-title">🏢 VPT-101 Consortium</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 30px;">
+                <strong>Early adopters get preferred licensing terms, shared development costs, and first-to-market advantage.</strong>
+            </p>
+
+            <div class="pressure-stats">
+                <div class="stat-card pulse">
+                    <div class="stat-number">47</div>
+                    <div>Labs Implementing</div>
+                </div>
+                <div class="stat-card pulse">
+                    <div class="stat-number">23</div>
+                    <div>Countries Active</div>
+                </div>
+                <div class="stat-card pulse">
+                    <div class="stat-number">12</div>
+                    <div>Validation Studies</div>
+                </div>
+                <div class="stat-card pulse">
+                    <div class="stat-number">8</div>
+                    <div>Consortium Members</div>
+                </div>
+            </div>
+
+            <p style="font-size: 1.2rem; margin: 30px 0;">
+                <strong>Competitive Pressure Timeline:</strong><br>
+                Week 1: First clinical trials begin<br>
+                Week 4: First safety data published<br>
+                Week 8: FDA Pre-IND meetings scheduled<br>
+                Week 12: Commercial partnerships announced
+            </p>
+
+            <a href="mailto:consortium@openplasticdetox.org" class="cta-button">
+                🚨 JOIN THE CONSORTIUM NOW
+            </a>
+        </div>
+    </div>
+</body>
+</html> 
