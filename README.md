@@ -8,6 +8,8 @@
 
 > **Democratizing advanced medical technology through open-source collaboration**
 
+> *"I built a universe. It belongs to everyone. Use it to destroy scarcity, cure disease, or just light up your basement lab. I don't care—just don't lock the door behind you."*
+
 ## 🌟 What is VPT-101?
 
 **VPT-101 is the world's first comprehensive open-source platform for vault protein therapies** - making advanced medical treatments as accessible as open-source software. Just as Linux democratized computing, VPT-101 democratizes medicine.
